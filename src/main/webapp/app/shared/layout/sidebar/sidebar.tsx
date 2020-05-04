@@ -2,10 +2,13 @@ import React from 'react';
 import clsx from 'clsx';
 import { withStyles, Divider, Drawer, ListItem, List, Hidden, ListItemIcon } from '@material-ui/core';
 import { NavLink as Link, Redirect } from 'react-router-dom';
+import LoadingBar from 'react-redux-loading-bar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Tooltip, Avatar } from 'antd';
+import Header from 'app/shared/layout/header/header';
+import { Tooltip, Button, Avatar, Popover } from 'antd';
+import { Storage } from 'react-jhipster';
 
-const drawerWidth = 73;
+const drawerWidth = 60;
 
 const styles = theme => ({
   root: {
@@ -14,7 +17,6 @@ const styles = theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    zIndex:0,
     whiteSpace: 'nowrap'
   },
   appBar: {
@@ -42,7 +44,7 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3)
+    padding: theme.spacing.unit * 3
   },
   hide: {
     display: 'none'
@@ -53,7 +55,7 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen
     }),
-    background: 'linear-gradient(0deg, rgba(19,137,134,1) 1%, rgba(23,115,132,1) 40%, rgb(31, 67, 128) 78%)'
+    backgroundColor: '#141b26'
   },
   drawerClose: {
     transition: theme.transitions.create('width', {
@@ -78,6 +80,7 @@ export interface IDrawerProps {
   onLocaleChange: Function;
   classes: any;
   theme: any;
+  account: any;
 }
 
 export interface IDrawerState {
@@ -101,7 +104,7 @@ class SideDrawer extends React.Component<IDrawerProps, IDrawerState> {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, account } = this.props;
 
     const drawer = (
       <div className="buttons">
@@ -110,32 +113,38 @@ class SideDrawer extends React.Component<IDrawerProps, IDrawerState> {
           <ListItem button key={'home'} component={Link} to="/">
             <ListItemIcon>
               <div style={{ width: 20, height: 20, color: 'white', marginLeft: 8 }}>
-                <Tooltip placement="right" title="Dashboard">
+                <Tooltip placement="right"  title="Dashboard">
                   <FontAwesomeIcon icon="home" fixedWidth />
                 </Tooltip>
               </div>
             </ListItemIcon>
           </ListItem>
         </List>
-        <Divider />
-        <List>
-          <ListItem button key={'admin'} component={Link} to="/admindashboard">
-            <ListItemIcon>
-              <div style={{ width: 20, height: 20, color: 'white', marginLeft: 8 }}>
-                <Tooltip placement="right" title="Admin Dashboard">
-                  <FontAwesomeIcon icon="user-cog" fixedWidth />
-                </Tooltip>
-              </div>
-            </ListItemIcon>
-          </ListItem>
-        </List>
-        <Divider />
+        <Divider/>
         <List>
           <ListItem button key={'Blood Group'} component={Link} to="/logout">
             <ListItemIcon>
               <div style={{ width: 20, height: 20, color: 'white', marginLeft: 8 }}>
                 <Tooltip placement="right" title="Logout">
                   <FontAwesomeIcon icon="power-off" fixedWidth />
+                </Tooltip>
+              </div>
+            </ListItemIcon>
+          </ListItem>
+        </List>
+        <List>
+          <ListItem
+            button
+            key={'Blood Group'}
+          >
+            <ListItemIcon>
+              <div style={{ width: 20, height: 20, color: 'white', marginLeft: 6 }}>
+                <Tooltip placement="right" title={account.login}>
+                  {account.imageUrl !== null ? (
+                    <Avatar style={{ backgroundColor: '#141b25' }} src={account.imageUrl} size={25} />
+                  ) : (
+                    <Avatar style={{ backgroundColor: '#141b25' }} size={25} icon="user" />
+                  )}
                 </Tooltip>
               </div>
             </ListItemIcon>

@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  background: url('../content/images/logo-name.png') no-repeat center;
 }
 
 .bg-primary {
@@ -375,4 +374,11 @@ element.style {
   background: #0a6ce5 !important;
   color: #ffffff;
 }
+.MuiDrawer-paper {
+  top: 70px !important;
+  width: 74px !important;
+  background: #505050 !important;
+  z-index: 0 !important;
+}
+
 /* jhipster-needle-scss-add-main JHipster will add new css style */

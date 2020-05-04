@@ -23,7 +23,7 @@ export default class Cards extends Component {
                         <Link to="/entity/transaction">
                           <img
                             alt="example"
-                            src="content/images/icons/das-transaction.png"
+                            src="content/images/icons/administrator.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -56,7 +56,7 @@ export default class Cards extends Component {
                         <Link to="/entity/transaction">
                           <img
                             alt="example"
-                            src="content/images/icons/das-transaction.png"
+                            src="content/images/icons/driver.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -89,7 +89,7 @@ export default class Cards extends Component {
                         <Link to="/entity/vendor">
                           <img
                             alt="example"
-                            src="content/images/icons/vendor.png"
+                            src="content/images/icons/passengers.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -124,7 +124,7 @@ export default class Cards extends Component {
                         <Link to="/entity/system-events-history">
                           <img
                             alt="example"
-                            src="content/images/icons/report.png"
+                            src="content/images/icons/affiliate.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -158,7 +158,7 @@ export default class Cards extends Component {
                          <Link to="/entity/product">
                            <img
                              alt="example"
-                             src="content/images/icons/product.png"
+                             src="content/images/icons/financial.png"
                              style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                            />
                          </Link>
@@ -195,7 +195,7 @@ export default class Cards extends Component {
                         <Link to="/entity/vendor-product">
                           <img
                             alt="example"
-                            src="content/images/icons/vendor-product.png"
+                            src="content/images/icons/map.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -230,7 +230,7 @@ export default class Cards extends Component {
                          <Link to="/entity/operator">
                            <img
                              alt="example"
-                             src="content/images/icons/operators.png"
+                             src="content/images/icons/services.png"
                              style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                            />
                          </Link>
@@ -265,7 +265,7 @@ export default class Cards extends Component {
                         <Link to="/entity/notification">
                           <img
                             alt="example"
-                            src="content/images/icons/alarm.png"
+                            src="content/images/icons/sms.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -298,7 +298,7 @@ export default class Cards extends Component {
                         <Link to="/entity/currency-xchange-rate">
                           <img
                             alt="example"
-                            src="content/images/icons/das-exchange.png"
+                            src="content/images/icons/antenna.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -370,7 +370,7 @@ export default class Cards extends Component {
                         <Link to="/entity/whitelisted-ip">
                           <img
                             alt="example"
-                            src="content/images/icons/whitelistip.png"
+                            src="content/images/icons/dashboard.png"
                             style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
                           />
                         </Link>
@@ -397,6 +397,41 @@ export default class Cards extends Component {
                       ]}
                 >
                   <Meta style={{ fontSize: 24 }} description={translate('global.menu.entities.dashboard')} />
+                </Card>
+              </Col>
+              <Col className="col-sm-3">
+                <Card className="catch-card m-auto text-center"
+                      cover={
+                        <Link to="/entity/whitelisted-ip">
+                          <img
+                            alt="example"
+                            src="content/images/icons/support.png"
+                            style={{ width: 150, height: 150, marginLeft: 70, marginTop: 10 }}
+                          />
+                        </Link>
+                      }
+                  /* eslint react/jsx-key: 0 */
+                      actions={[
+                        /* eslint react/jsx-key: 0 */
+                        <Link to="/entity/whitelisted-ip/new">
+                          <PlusCircleOutlined  type="plus" />
+                        </Link>,
+                        /* eslint react/jsx-key: 0 */
+                        <Link to="/entity/whitelisted-ip">
+                          <SearchOutlined  type="search" />
+                        </Link>,
+                        /* eslint react/jsx-key: 0 */
+                        <Popover
+                          placement="rightBottom"
+                          title="Info"
+                          content={translate('global.menu.customerCare.main')}
+                          trigger="click"
+                        >
+                          <InfoCircleOutlined  type="info-circle" />
+                        </Popover>
+                      ]}
+                >
+                  <Meta style={{ fontSize: 24 }} description={translate('global.menu.customerCare.main')} />
                 </Card>
               </Col>
             </Row>
