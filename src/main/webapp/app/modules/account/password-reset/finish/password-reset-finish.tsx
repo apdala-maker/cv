@@ -4,7 +4,7 @@ import { Col, Row, Button } from 'reactstrap';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { Translate, translate, getUrlParameter } from 'react-jhipster';
 import { RouteComponentProps } from 'react-router-dom';
-
+import "../password-reset.scss";
 import { handlePasswordResetFinish, reset } from '../password-reset.reducer';
 import PasswordStrengthBar from 'app/shared/layout/password/password-strength-bar';
 
@@ -22,7 +22,7 @@ export const PasswordResetFinishPage = (props: IPasswordResetFinishProps) => {
 
   const getResetForm = () => {
     return (
-      <AvForm onValidSubmit={handleValidSubmit}>
+      <AvForm onValidSubmit={handleValidSubmit} className="password-reset-form">
         <AvField
           name="newPassword"
           label={translate('global.form.newpassword.label')}

@@ -73,3 +73,22 @@ Navbar styles
   top: 0px;
   z-index: 1031;
 }
+@media (min-width: 576px) {
+  .col-sm-2 {
+    flex: 0 0 16.6666666667%;
+    width: 24.6666666667% !important;
+    border-radius: 0px !important;
+  }
+}
+.homecontainer .ant-card .ant-card-actions {
+  background: linear-gradient(90deg, #1f4380 28%, #138986 85%);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    width: 100% !important;
+  }
+}

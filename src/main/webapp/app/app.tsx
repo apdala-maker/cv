@@ -1,6 +1,5 @@
 import 'react-toastify/dist/ReactToastify.css';
 import './app.scss';
-
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Card } from 'reactstrap';
@@ -27,16 +26,16 @@ const baseHref = document
 export interface IAppProps extends StateProps, DispatchProps {}
 
 export const App = (props: IAppProps) => {
-  useEffect(() => {
-    props.getSession();
-    props.getProfile();
-  }, []);
+  // useEffect(() => {
+  //   props.getSession();
+  //   props.getProfile();
+  // }, []);
 
   const paddingTop = '60px';
   return (
     <Router basename={baseHref}>
-      <div className="app-container" style={{ paddingTop }}>
-        <ToastContainer position={toast.POSITION.TOP_LEFT} className="toastify-container" toastClassName="toastify-toast" />
+      <div className="app-container bg-light" style={{ paddingTop }}>
+        <ToastContainer position={toast.POSITION.TOP_RIGHT} className="toastify-container" toastClassName="toastify-toast" />
         <ErrorBoundary>
           <Header
             isAuthenticated={props.isAuthenticated}
@@ -48,14 +47,14 @@ export const App = (props: IAppProps) => {
             isSwaggerEnabled={props.isSwaggerEnabled}
           />
         </ErrorBoundary>
-        <div className="container-fluid view-container" id="app-view-container">
-          <Card className="jh-card">
+        <div className="container-fluid  bg-light view-container" id="app-view-container" style={{minHeight:"610px"}} >
+          <div className="jh-card bg-light shadow-none border-none">
             <ErrorBoundary>
               <AppRoutes />
             </ErrorBoundary>
-          </Card>
-          <Footer />
+          </div>
         </div>
+        <Footer />
       </div>
     </Router>
   );
