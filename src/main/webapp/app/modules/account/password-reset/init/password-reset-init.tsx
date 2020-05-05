@@ -3,7 +3,7 @@ import { Translate, translate } from 'react-jhipster';
 import { connect } from 'react-redux';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { Button, Alert, Col, Row } from 'reactstrap';
-
+import "../password-reset.scss";
 import { IRootState } from 'app/shared/reducers';
 import { handlePasswordResetInit, reset } from '../password-reset.reducer';
 
@@ -23,7 +23,7 @@ export class PasswordResetInit extends React.Component<IPasswordResetInitProps> 
     return (
       <div>
         <Row className="justify-content-center">
-          <Col md="8">
+          <Col md="8 password-reset-form p-4">
             <h1>
               <Translate contentKey="reset.request.title">Reset your password</Translate>
             </h1>

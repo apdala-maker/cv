@@ -1,0 +1,152 @@
+.loginform {
+  width: 100%;
+  max-width: 375px !important;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  //border-radius: 25px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 47.5px;
+  margin-bottom: 47.5px;
+  padding-bottom: 50px !important;
+}
+.headertitle {
+  text-align: center;
+  color: coral;
+  font-size: 25px;
+  background: white;
+  border: none;
+}
+.loginform .logo {
+  height: 100px !important;
+  margin-left: 0;
+}
+.loginform .modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-align: center;
+  min-width: 310px;
+  display: inline-table;
+}
+body {
+  background-color: #e8e8e7;
+}
+.loginform .modal-body {
+  padding: 0;
+}
+.loginform .form-group label {
+  display: none;
+}
+.loginform .form-group {
+  margin-bottom: 0;
+}
+.loginform .form-group .form-control {
+  padding: 23px 15px;
+  border: 1px solid #ced4da !important;
+}
+.loginform .form-group #username {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.loginform .form-group #password {
+  margin-bottom: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.loginform .form-check.form-check-inline {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.loginform .alert-warning {
+  background: none;
+  text-align: center;
+  font-size: 13px;
+  color: #0c75b3;
+  padding: 0;
+}
+.loginform .alert-warning a {
+  font-size: 13px;
+  color: #0c75b3;
+  text-decoration: none;
+}
+.loginform .invalid-feedback {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+.loginform .form-check-label {
+  font-size: 16px;
+}
+.loginform #rememberMe {
+  margin-right: 0;
+}
+.loginform .btn-submit-n {
+  background: linear-gradient(90deg, rgba(31, 67, 128, 1) 28%, rgba(19, 137, 134, 1) 85%);
+  border-color: #1f4380;
+  border-radius: 10px;
+}
+.loginform .btn-submit-n:hover {
+  background: linear-gradient(90deg, rgba(19, 137, 134, 1) 17%, rgba(31, 67, 128, 1) 72%);
+  border-color: #78c2ad;
+}
+.loginform .btn-cancel-n {
+  background: #fff;
+  border-color: #fff;
+  color: #0c75b3;
+}
+.loginform .form-control:focus {
+  z-index: 9;
+  position: relative;
+}
+.loginform .btn-cancel-n {
+  background: none !important;
+  border: none !important;
+}
+.loginform .invalid-feedback {
+  margin-bottom: 8px;
+  margin-top: 0px;
+  position: relative;
+}
+.loginform .is-invalid {
+  margin-bottom: 0 !important;
+}
+.loginform .ant-avatar > img {
+  height: auto;
+}
+@media only screen and (max-width: 599px) {
+  .loginform {
+    position: absolute;
+    left: 1%;
+    top: 85px;
+    width: 92% !important;
+    right: 1%;
+    margin-top: 0 !important;
+  }
+  .loginform .ant-avatar > img {
+    display: block;
+    width: 157px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .loginform .logo {
+    height: auto !important;
+    width: 100% !important;
+  }
+  .loginform .modal-title {
+    min-width: 0px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  .loginform .modal-header {
+    display: flow-root;
+  }
+}
+.app-container .view-container .view-routes > div {
+  height: auto !important;
+}

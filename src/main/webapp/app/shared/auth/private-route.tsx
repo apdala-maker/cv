@@ -34,7 +34,7 @@ export const PrivateRouteComponent = ({
 
   const renderRedirect = props => {
     if (!sessionHasBeenFetched) {
-      return <div></div>;
+      return <div/>;
     } else {
       return isAuthenticated ? (
         checkAuthorities(props)
