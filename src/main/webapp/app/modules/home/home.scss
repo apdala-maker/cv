@@ -2,9 +2,580 @@
 Main page styles
 ========================================================================== */
 .hipster {
-  display: inline-block;
+  display: flex;
+  width: 140%;
+  margin-left: -5%;
+  margin-right: -50%;
+  margin-top: -3%;
+  height: 150vh;
+}
+.simplecard {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  height: 35rem;
+  width: 80rem;
+  border-radius: 3px;
+}
+.Title {
+  color: rgb(255, 255, 255);
+}
+.dashboard-header {
+  color: #757575;
+}
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+.sidebar {
+  margin: 0;
+}
+.bodyHome {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  font-size: 30px;
+  text-align: left;
+  background-color: #df682f;
+  margin-left: -100px;
+}
+.card {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.counter {
+  background-color: black;
+  padding: 20px 0;
+  border-radius: 5px;
+  width: 15rem;
+  height: 6rem;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.count-text {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #df682f;
+}
+#app-view-container {
+  width: 100% !important;
+  margin: 0 !important;
+  padding-bottom: 50px !important;
+  padding-left: 115px !important;
+  padding-right: 50px !important;
+}
+#app-view-container .ant-row {
+  width: 100% !important;
+  margin-top: 10px !important;
+  padding: 0 !important;
+}
+#app-view-container .ant-row .homecontainer .ant-row {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.homecontainer {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.ant-tooltip {
+  z-index: 9999 !important;
+}
+
+.MuiListItemIcon-root {
+  min-width: 35px !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.homecontainer .ant-col.ant-col-6 {
+  width: 240px !important;
+  margin-bottom: 23px;
+}
+.homecontainer br {
+  display: none !important;
+}
+.homecontainer {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 1000px !important;
+}
+.homecontainer .ant-card.ant-card-bordered {
+  width: 100% !important;
+  border-radius: 15px;
+  padding-top: 35px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+.homecontainer .ant-card .ant-card-cover img {
+  max-width: 70px;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center;
+  height: auto !important;
+}
+.homecontainer .ant-card .ant-card-actions {
+  background: linear-gradient(90deg, #1f4380 28%, #138986 85%);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.ant-modal .anticon {
+  color: #33373c;
+  vertical-align: 0;
+}
+.anticon {
+  color: #fff;
+}
+.homecontainer .ant-card-actions > li > span > .anticon {
+  color: #fff;
+  vertical-align: 0;
+}
+.app-container {
+  padding-top: 85px !important;
+}
+.MuiAppBar-positionFixed {
+  left: 0 !important;
+}
+.homecontainer .ant-card-meta-description {
+  font-size: 20px !important;
+  line-height: 26px !important;
+}
+.new-form-list .form-group {
+  width: 50%;
+  float: left;
+  padding: 7px;
+  margin-bottom: 5px !important;
+  position: relative;
+}
+.new-form-list .form-check-label {
+  margin-left: 23px;
+}
+.new-form-list .form-check-input {
+  margin-top: 4px;
+}
+.new-form-list .form-group .form-group {
   width: 100%;
-  height: 497px;
-  background: url('../../../content/images/jhipster_family_member_2.svg') no-repeat center top;
-  background-size: contain;
+  padding: 0;
+  margin: 0 !important;
+  min-height: 0px;
+}
+.none-w {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  min-height: 0px !important;
+}
+.margin-top-35 {
+  margin-top: 35px;
+}
+.left-w {
+  clear: left;
+}
+.padding-top-45 {
+  padding-top: 45px !important;
+}
+.margin-top-40 {
+  margin-top: -40px;
+}
+.new-form-list .none-w.form-group {
+  margin-bottom: 0 !important;
+}
+.invalid-feedback {
+  position: absolute;
+}
+.ant-avatar {
+  background: none !important;
+}
+.ant-card-meta-description {
+  color: rgba(0, 0, 0, 0.65);
+}
+#app-view-container .input-group #search {
+  margin-right: 5px;
+  border-radius: 3px;
+}
+#app-view-container .input-group button {
+  margin-right: 5px;
+}
+.rest-pass-w {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  max-width: 596px;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 97px;
+}
+#header-tabs .dropdown-menu {
+  min-width: 14rem;
+}
+.user-style-n .ant-tabs-tabpane {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #e1e3e4;
+  border-radius: 0px 10px 10px 10px;
+}
+.user-style-n .ant-tabs-tab .anticon,
+.user-style-n .ant-tabs-tab span {
+  color: rgba(0, 0, 0, 0.65) !important;
+  font-weight: bold;
+}
+.user-style-n .ant-tabs-tab-active .anticon,
+.user-style-n .ant-tabs-tab-active span {
+  color: #138986 !important;
+}
+.user-style-n .ant-tabs-ink-bar {
+  background: #138986;
+  top: 0 !important;
+  height: 3px !important;
+}
+.user-style-n .ant-layout-footer {
+  background: none !important;
+  padding: 0;
+  margin-top: 17px;
+}
+.user-style-n .ant-layout-sider {
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  min-width: 220px;
+}
+.user-style-n .ant-layout-sider .ant-avatar {
+  height: auto !important;
+  width: 100% !important;
+}
+.user-style-n .ant-layout-sider .ant-avatar-square {
+  border-radius: 0 !important;
+}
+.user-style-n .ant-tabs-bar {
+  margin-bottom: -1px !important;
+}
+.user-style-n .ant-layout {
+  background: none !important;
+}
+.user-style-n.ant-layout {
+  background: none !important;
+}
+.user-style-n .ant-tabs-nav .ant-tabs-tab {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 7px 0 0;
+  border-left: 1px solid #e1e3e4;
+}
+.user-style-n .ant-tabs-nav .ant-tabs-tab-active {
+  background: #fff;
+  border-bottom: none !important;
+  border-left: none !important;
+  margin-right: 0 !important;
+}
+.user-style-n .ant-tabs-nav {
+  background: #f5f5f5;
+  border: 1px solid #e1e3e4;
+  border-radius: 10px 10px 0px 0px;
+}
+.user-style-n .ant-tabs-tab-prev {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px 0px 0px 10px;
+}
+.user-style-n .ant-tabs-tab-next {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0px 10px 10px 0px;
+}
+.table a:not(.btn) {
+  color: #138986;
+}
+.user-style-n .ant-descriptions-item-content {
+  font-weight: bold;
+}
+.user-style-n .ant-descriptions-item-label {
+  min-width: 110px;
+}
+.user-style-n .ant-layout-content {
+  background: #fff;
+  padding-top: 14px !important;
+}
+.user-style-n .ant-descriptions-row > th,
+.user-style-n .ant-descriptions-row > td {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #e1e3e4;
+}
+.user-style-n .ant-descriptions-title {
+  color: #138986;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ant-row {
+  background: none !important;
+}
+.user-style-n .ant-descriptions-item-label {
+  color: rgba(0, 0, 0, 0.65) !important;
+}
+.user-style-n .table thead th {
+  text-align: right;
+  border-right: 1px solid #e1e3e4;
+}
+.user-style-n .table thead th span {
+  float: left;
+  font-weight: normal;
+  color: #138986;
+}
+.user-style-n .table thead th svg {
+  color: #138986;
+}
+.ant-tabs-nav .ant-tabs-tab .anticon {
+  margin-right: 12px;
+  vertical-align: 0 !important;
+}
+.homecontainer .anticon {
+  vertical-align: 0;
+}
+.user-style-n .table thead tr {
+  border-left: 1px solid #e1e3e4;
+}
+.table thead th {
+  border-bottom: none !important;
+}
+.btn-position .btn-danger {
+  position: absolute !important;
+  left: -20px;
+  top: 0;
+}
+.homecontainer h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(109, 105, 105);
+}
+.rest-pass-w .invalid-feedback {
+  position: relative;
+}
+.dashboard-W .ant-list-item-action {
+  display: none;
+}
+.dashboard-W .ant-card-body {
+  padding: 8px !important;
+}
+.dashboard-W .ant-card {
+  height: auto !important;
+}
+.btn-align-w .btn-1,
+.btn-align-w .btn-2 {
+  float: right;
+  margin: 0 5px;
+}
+@media only screen and (max-width: 1200px) {
+  .dashboard-W .ant-col-8 {
+    width: 33%;
+    margin-bottom: 10px;
+  }
+  .dashboard-W .ant-list-item-meta-avatar .ant-avatar {
+    width: 45px !important;
+    height: 45px !important;
+    margin-right: 5px !important;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .dashboard-W .ant-col-8 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #app-view-container .dashboard-W .ant-row {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .app-container {
+    padding-top: 82px !important;
+  }
+  .PrivateHiddenCss-xsDown-61 {
+    display: block !important;
+  }
+  #app-view-container {
+    padding-right: 0px !important;
+    padding-left: 90px !important;
+  }
+  .homecontainer .ant-col.ant-col-6 {
+    width: 100% !important;
+  }
+  .PrivateHiddenCss-xsDown-203,
+  #header-tabs.navbar-nav {
+    display: block !important;
+  }
+  #header-tabs.navbar-nav .nav-item {
+    float: left;
+    margin-right: 18px;
+    position: inherit !important;
+  }
+  .fixed-top .navbar-collapse {
+    margin-top: 8px;
+    margin-left: 24px;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    overflow: scroll;
+    left: 22px;
+    width: 266px !important;
+    height: 300px;
+  }
+  .jh-create-entity {
+    clear: left;
+    float: left !important;
+    margin-bottom: 5px !important;
+    margin-right: 21px;
+  }
+  .device-left {
+    clear: left;
+    margin: 0 !important;
+  }
+  .device-left > .col-sm-12 {
+    padding-left: 0 !important;
+  }
+  .new-form-list .justify-content-center.row {
+    margin: 0 !important;
+  }
+  .justify-content-center.row {
+    margin: 0 !important;
+  }
+  .new-form-list .form-group {
+    width: 100%;
+    padding: 2px;
+  }
+  .new-form-list h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .rest-pass-w {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    margin: 5%;
+  }
+  .rest-pass-w h1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .layout.user-style-n.ant-layout .ant-layout {
+    display: block;
+  }
+  .user-style-n .ant-layout-sider {
+    max-width: 2000px !important;
+    width: 60% !important;
+    margin: 0 auto;
+  }
+  .user-style-n .ant-layout-content {
+    margin: 20px 24px 0 0;
+  }
+}
+html[dir='rtl'] {
+  .MuiDrawer-paperAnchorLeft {
+    right: 0;
+    left: auto;
+  }
+  .ml-auto.navbar-nav {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  #app-view-container {
+    padding-right: 115px !important;
+    padding-left: 50px !important;
+  }
+  .homecontainer .ant-col.ant-col-6 {
+    float: right;
+  }
+  body {
+    text-align: right;
+  }
+  .new-form-list .form-check-label {
+    margin-right: 23px;
+    margin-left: 0;
+  }
+  .form-check-input {
+    margin-right: -1.25rem;
+  }
+  .btn-primary.float-right {
+    float: left !important;
+  }
+  .ant-tabs-ink-bar {
+    right: 0;
+    display: none !important;
+  }
+  .ant-tabs-nav .ant-tabs-tab .anticon {
+    margin-right: 0px;
+    margin-left: 12px;
+  }
+  .ant-tabs-content {
+    direction: ltr;
+  }
+  .ant-tabs.ant-tabs-top {
+    direction: ltr;
+  }
+  .ant-tabs-tab {
+    direction: rtl;
+  }
+  .user-style-n .ant-tabs-tabpane {
+    border-radius: 10px 0px 10px 10px;
+  }
+  .ant-row.row .ant-col.ant-col-12.col-sm-6 {
+    float: right;
+  }
+  .ant-list-item-meta-avatar {
+    margin-left: 16px;
+    margin-right: 10px;
+  }
+  .text-right .btn-group.flex-btn-group-container {
+    text-align: left !important;
+    float: left;
+  }
+  .text-right .btn-group.flex-btn-group-container .btn {
+    border-radius: 0.2rem !important;
+  }
+  .dropdown-menu-right {
+    right: auto;
+    left: 0;
+  }
+  .dropdown-item {
+    text-align: right;
+  }
+}
+.ant-card-actions {
+  background: #019444 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .homecontainer .ant-card.ant-card-bordered {
+    border-radius: 0px !important;
+    margin-top: 20px !important;
+    margin-right: 50px !important;
+  }
+  .dashboard-header {
+    margin: auto;
+  }
+  .homecontainer h3 {
+    text-align: left !important;
+    margin-left: 23% !important;
+  }
+}
+
+.catch-card {
+  border-radius: 0px !important;
 }

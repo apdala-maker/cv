@@ -74,7 +74,7 @@ export default (state: AuthenticationState = initialState, action): Authenticati
         ...initialState,
         showModalLogin: true
       };
-  /*  case SUCCESS(ACTION_TYPES.GET_SESSION): {
+    /*  case SUCCESS(ACTION_TYPES.GET_SESSION): {
       const isAuthenticated = action.payload && action.payload.data && action.payload.data.activated;
       return {
         ...state,
@@ -121,7 +121,6 @@ export const login = (username, password, rememberMe = false) => async (dispatch
   const email = username;
   const result = await dispatch({
     type: ACTION_TYPES.LOGIN,
-    
     payload: axios.post('api/v1/catch/login', { email, password, rememberMe })
   });
   // const bearerToken = result.value.headers.authorization;
@@ -134,7 +133,7 @@ export const login = (username, password, rememberMe = false) => async (dispatch
       Storage.session.set(AUTH_TOKEN_KEY, jwt);
     }
   }
- // await dispatch(getSession());
+  // await dispatch(getSession());
 };
 
 export const clearAuthToken = () => {

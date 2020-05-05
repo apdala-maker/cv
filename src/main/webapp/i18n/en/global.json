@@ -1,12 +1,23 @@
 {
   "global": {
-    "title": "CatchControlPanel",
+    "title": "CATCH",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
     "menu": {
       "home": "Home",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "systemEventsHistory": "System Events History",
+        "transaction": "Transaction",
+        "transactionExtraData": "Transaction Extra Data",
+        "currency": "Currency",
+        "country": "Country",
+        "dashboard": "Dashboard",
+        "currencyXchangeRate": "Xchange Rate",
+        "notification": "Notification",
+        "analytics": "Analytics",
+        "activity": "Activity",
+        "vendorParamType": "Vendor Param Type",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -17,6 +28,80 @@
         "login": "Sign in",
         "logout": "Sign out",
         "register": "Register"
+      },
+      "drivers": {
+        "main": "Drivers",
+        "onlineDrivers": "Online Drivers",
+        "allDrivers": "All Drivers",
+        "driverLeads": "Driver Leads",
+        "approvedDrivers": "Approved Drivers",
+        "driverProfile": "Driver Profile",
+        "driverTrips": "Driver Trips",
+        "driverActivities": "Driver Activities"
+      },
+      "passengers": {
+        "main": "Passenger",
+        "allPassengers": "All Passengers",
+        "passengerTrips": "Passenger Trips"
+      },
+      "area": {
+        "main": "Area",
+        "newArea": "New Area",
+        "updateArea": "Update Area",
+        "deactivateArea": "Deactivate Area",
+        "allAreas": "All Areas",
+        "areaFileTypes": "Area File Types",
+        "newAreaFileType": "New Area File Type"
+      },
+      "customerCare": {
+        "main": "Customer Care",
+        "lostItems": "Lost Items",
+        "foundItems": "Found Items",
+        "reportedMissing": "Reported Missing"
+      },
+      "affiliates": {
+        "main": "Affiliates",
+        "allAffiliates": "All Affiliates"
+      },
+      "trips": {
+        "main": "Trips",
+        "allTrips": "All Trips",
+        "cancelledTrips": "Cancelled Trips",
+        "completedTrips": "Completed Trips",
+        "onGoingTrips": "Ongoing Trips"
+      },
+      "moneyPayBackOption": {
+        "main": "Money Payback Options",
+        "promoCodes": "Promo Codes"
+      },
+      "cabManagement": {
+        "main": "Cab Management",
+        "vehicleType": "Vehicle Type",
+        "vehicleModel": "Vehicle Model",
+        "vehicleMake": "Vehicle Make"
+      },
+      "accounting": {
+        "main": "Accounting",
+        "tariffs": "Tariffs",
+        "chartOfAccounts": "Chart Of Accounts",
+        "transactionCharges": "Transaction Charges",
+        "transactionParty": "TransactionParty",
+        "transactionPartySchedule": "Transaction Party Schedule"
+      },
+      "auxiliary": {
+        "main": "Auxiliary Services",
+        "codeGenerators": "Code Generators",
+        "companyManagement": "Company Management",
+        "newCodeGenerators": "New Code Generators",
+        "newCompany": "New Company",
+        "updateCompany": "Update Company"
+      },
+      "smsServices": {
+        "main": "SMS Services",
+        "sendSms": "sendSms",
+        "smsPassengers": "SMS Passengers",
+        "smsDrivers": "SMS Drivers",
+        "smsClients": "SMS Clients"
       },
       "admin": {
         "main": "Administration",
@@ -130,11 +215,7 @@
     "userexists": "Login name already used!",
     "emailexists": "Email is already in use!",
     "idexists": "A new {{ entityName }} cannot already have an ID",
-    "idnull": "Invalid ID",
-    "file": {
-      "could.not.extract": "Could not extract file",
-      "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
-    }
+    "idnull": "Invalid ID"
   },
   "footer": "This is your footer"
 }

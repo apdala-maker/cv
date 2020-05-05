@@ -1,0 +1,37 @@
+/* ==========================================================================
+Main menu styles
+========================================================================== */
+.sidebar-menu {
+  width: 100% !important;
+  background-color: #575454 !important;
+  border-radius: 0 !important;
+  border: none;
+}
+.opened {
+  background-color: #eeebeb !important;
+  color: #1b1b1b !important;
+}
+.sidebar-menu > btn {
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+.dropright .dropdown-toggle::after {
+  display: inline-block;
+  margin-right: 0.255em;
+  float: right !important;
+  vertical-align: 0.255em;
+  margin-top: 0.45em !important;
+  content: '';
+  border-top: 0.3em solid transparent;
+  border-right: 0;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.3em solid;
+}
+.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #919ca6;
+  border-color: #ffffff !important;
+}
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
