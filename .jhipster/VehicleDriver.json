@@ -1,0 +1,41 @@
+{
+    "name": "VehicleDriver",
+    "fields": [
+        {
+            "fieldName": "modelCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "makeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vehicleTypeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "year",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "registrationNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "color",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506092300",
+    "entityTableName": "vehicle_driver",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

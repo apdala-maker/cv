@@ -1,0 +1,11 @@
+{
+  "catchControlPanelApp": {
+    "PartyCategory": {
+      "null": "",
+      "COLLECTOR": "COLLECTOR",
+      "REMITTER": "REMITTER",
+      "REVOLVING_FUND": "REVOLVING_FUND",
+      "SERVICE_PROVIDER": "SERVICE_PROVIDER"
+    }
+  }
+}

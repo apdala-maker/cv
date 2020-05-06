@@ -1,0 +1,27 @@
+{
+  "catchControlPanelApp": {
+    "onlineTimes": {
+      "home": {
+        "title": "Online Times",
+        "createLabel": "Create a new Online Times",
+        "createOrEditLabel": "Create or edit a Online Times",
+        "notFound": "No Online Times found"
+      },
+      "created": "A new Online Times is created with identifier {{ param }}",
+      "updated": "A Online Times is updated with identifier {{ param }}",
+      "deleted": "A Online Times is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Online Times {{ id }}?"
+      },
+      "detail": {
+        "title": "Online Times"
+      },
+      "start": "Start",
+      "finish": "Finish",
+      "driverCode": "Driver Code",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

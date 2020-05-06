@@ -1,0 +1,36 @@
+{
+  "catchControlPanelApp": {
+    "vehicleMapping": {
+      "home": {
+        "title": "Vehicle Mappings",
+        "createLabel": "Create a new Vehicle Mapping",
+        "createOrEditLabel": "Create or edit a Vehicle Mapping",
+        "notFound": "No Vehicle Mappings found"
+      },
+      "created": "A new Vehicle Mapping is created with identifier {{ param }}",
+      "updated": "A Vehicle Mapping is updated with identifier {{ param }}",
+      "deleted": "A Vehicle Mapping is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vehicle Mapping {{ id }}?"
+      },
+      "detail": {
+        "title": "Vehicle Mapping"
+      },
+      "makeCode": "Make Code",
+      "userCode": "User Code",
+      "modelCode": "Model Code",
+      "year": "Year",
+      "registrationNumber": "Registration Number",
+      "vehicleTypeCode": "Vehicle Type Code",
+      "areaCode": "Area Code",
+      "isApproved": "Is Approved",
+      "approvedBy": "Approved By",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

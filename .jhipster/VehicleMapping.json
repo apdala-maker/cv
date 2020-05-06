@@ -1,0 +1,77 @@
+{
+    "name": "VehicleMapping",
+    "fields": [
+        {
+            "fieldName": "makeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modelCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "year",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "registrationNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vehicleTypeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isApproved",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "approvedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creatorUserEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifierUserEmail",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506091200",
+    "entityTableName": "vehicle_mapping",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

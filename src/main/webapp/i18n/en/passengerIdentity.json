@@ -1,0 +1,33 @@
+{
+  "catchControlPanelApp": {
+    "passengerIdentity": {
+      "home": {
+        "title": "Passenger Identities",
+        "createLabel": "Create a new Passenger Identity",
+        "createOrEditLabel": "Create or edit a Passenger Identity",
+        "notFound": "No Passenger Identities found"
+      },
+      "created": "A new Passenger Identity is created with identifier {{ param }}",
+      "updated": "A Passenger Identity is updated with identifier {{ param }}",
+      "deleted": "A Passenger Identity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Passenger Identity {{ id }}?"
+      },
+      "detail": {
+        "title": "Passenger Identity"
+      },
+      "userCode": "User Code",
+      "name": "Name",
+      "countryCode": "Country Code",
+      "areaCode": "Area Code",
+      "referralCode": "Referral Code",
+      "gender": "Gender",
+      "companyCode": "Company Code",
+      "currentRating": "Current Rating",
+      "userType": "User Type",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "userProfileFileTypes": "User Profile File Types"
+    }
+  }
+}

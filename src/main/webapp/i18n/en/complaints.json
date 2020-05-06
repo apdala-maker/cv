@@ -1,0 +1,32 @@
+{
+  "catchControlPanelApp": {
+    "complaints": {
+      "home": {
+        "title": "Complaints",
+        "createLabel": "Create a new Complaints",
+        "createOrEditLabel": "Create or edit a Complaints",
+        "notFound": "No Complaints found"
+      },
+      "created": "A new Complaints is created with identifier {{ param }}",
+      "updated": "A Complaints is updated with identifier {{ param }}",
+      "deleted": "A Complaints is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Complaints {{ id }}?"
+      },
+      "detail": {
+        "title": "Complaints"
+      },
+      "userCode": "User Code",
+      "category": "Category",
+      "description": "Description",
+      "audience": "Audience",
+      "status": "Status",
+      "feedBack": "Feed Back",
+      "referenceCode": "Reference Code",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "complaintsCategory": "Complaints Category"
+    }
+  }
+}

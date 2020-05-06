@@ -1,0 +1,26 @@
+{
+  "catchControlPanelApp": {
+    "mongoFileTypes": {
+      "home": {
+        "title": "Mongo File Types",
+        "createLabel": "Create a new Mongo File Types",
+        "createOrEditLabel": "Create or edit a Mongo File Types",
+        "notFound": "No Mongo File Types found"
+      },
+      "created": "A new Mongo File Types is created with identifier {{ param }}",
+      "updated": "A Mongo File Types is updated with identifier {{ param }}",
+      "deleted": "A Mongo File Types is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mongo File Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Mongo File Types"
+      },
+      "fileName": "File Name",
+      "fileType": "File Type",
+      "narration": "Narration",
+      "areaFileTypeCode": "Area File Type Code",
+      "expiryDate": "Expiry Date"
+    }
+  }
+}

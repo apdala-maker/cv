@@ -1,0 +1,27 @@
+{
+  "catchControlPanelApp": {
+    "oTP": {
+      "home": {
+        "title": "OTPS",
+        "createLabel": "Create a new OTP",
+        "createOrEditLabel": "Create or edit a OTP",
+        "notFound": "No OTPS found"
+      },
+      "created": "A new OTP is created with identifier {{ param }}",
+      "updated": "A OTP is updated with identifier {{ param }}",
+      "deleted": "A OTP is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete OTP {{ id }}?"
+      },
+      "detail": {
+        "title": "OTP"
+      },
+      "phoneNumber": "Phone Number",
+      "userCode": "User Code",
+      "areaCode": "Area Code",
+      "oTPCode": "O TP Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

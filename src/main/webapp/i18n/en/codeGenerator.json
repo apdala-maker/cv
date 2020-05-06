@@ -1,0 +1,32 @@
+{
+  "catchControlPanelApp": {
+    "codeGenerator": {
+      "home": {
+        "title": "Code Generators",
+        "createLabel": "Create a new Code Generator",
+        "createOrEditLabel": "Create or edit a Code Generator",
+        "notFound": "No Code Generators found"
+      },
+      "created": "A new Code Generator is created with identifier {{ param }}",
+      "updated": "A Code Generator is updated with identifier {{ param }}",
+      "deleted": "A Code Generator is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Code Generator {{ id }}?"
+      },
+      "detail": {
+        "title": "Code Generator"
+      },
+      "seed": "Seed",
+      "currentNumber": "Current Number",
+      "numberCategory": "Number Category",
+      "prefix": "Prefix",
+      "characterCount": "Character Count",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

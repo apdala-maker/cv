@@ -1,0 +1,38 @@
+{
+  "catchControlPanelApp": {
+    "identityUser": {
+      "home": {
+        "title": "Identity Users",
+        "createLabel": "Create a new Identity User",
+        "createOrEditLabel": "Create or edit a Identity User",
+        "notFound": "No Identity Users found"
+      },
+      "created": "A new Identity User is created with identifier {{ param }}",
+      "updated": "A Identity User is updated with identifier {{ param }}",
+      "deleted": "A Identity User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Identity User {{ id }}?"
+      },
+      "detail": {
+        "title": "Identity User"
+      },
+      "userCode": "User Code",
+      "name": "Name",
+      "countryCode": "Country Code",
+      "areaCode": "Area Code",
+      "gender": "Gender",
+      "companyCode": "Company Code",
+      "affliateCode": "Affliate Code",
+      "currentRating": "Current Rating",
+      "userType": "User Type",
+      "isActive": "Is Active",
+      "registrationStep": "Registration Step",
+      "isApproved": "Is Approved",
+      "approvedBy": "Approved By",
+      "activatedBy": "Activated By",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "userProfileFileTypes": "User Profile File Types"
+    }
+  }
+}

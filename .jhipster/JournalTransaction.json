@@ -1,0 +1,89 @@
+{
+    "name": "JournalTransaction",
+    "fields": [
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "recordNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "driverCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "debit",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "credit",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "transactionReference",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "narration",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "transactionDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "batchNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "transactionCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "folio",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hashCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creatorUserEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifierUserEmail",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506084700",
+    "entityTableName": "journal_transaction",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

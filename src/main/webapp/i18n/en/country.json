@@ -1,0 +1,34 @@
+{
+  "catchControlPanelApp": {
+    "country": {
+      "home": {
+        "title": "Countries",
+        "createLabel": "Create a new Country",
+        "createOrEditLabel": "Create or edit a Country",
+        "notFound": "No Countries found"
+      },
+      "created": "A new Country is created with identifier {{ param }}",
+      "updated": "A Country is updated with identifier {{ param }}",
+      "deleted": "A Country is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Country {{ id }}?"
+      },
+      "detail": {
+        "title": "Country"
+      },
+      "countryName": "Country Name",
+      "countryCode": "Country Code",
+      "currencyName": "Currency Name",
+      "currencyCode": "Currency Code",
+      "currencySymbol": "Currency Symbol",
+      "language": "Language",
+      "timeZone": "Time Zone",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

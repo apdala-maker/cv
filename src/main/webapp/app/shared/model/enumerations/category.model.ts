@@ -1,0 +1,6 @@
+export const enum Category {
+  TRIP = 'TRIP',
+  CHARGE = 'CHARGE',
+  WAITING_CHARGE = 'WAITING_CHARGE',
+  CANCELLATION_CHARGE = 'CANCELLATION_CHARGE'
+}

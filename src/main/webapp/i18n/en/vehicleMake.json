@@ -1,0 +1,29 @@
+{
+  "catchControlPanelApp": {
+    "vehicleMake": {
+      "home": {
+        "title": "Vehicle Makes",
+        "createLabel": "Create a new Vehicle Make",
+        "createOrEditLabel": "Create or edit a Vehicle Make",
+        "notFound": "No Vehicle Makes found"
+      },
+      "created": "A new Vehicle Make is created with identifier {{ param }}",
+      "updated": "A Vehicle Make is updated with identifier {{ param }}",
+      "deleted": "A Vehicle Make is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vehicle Make {{ id }}?"
+      },
+      "detail": {
+        "title": "Vehicle Make"
+      },
+      "description": "Description",
+      "makeCode": "Make Code",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "catchControlPanelApp": {
+    "fileStorage": {
+      "home": {
+        "title": "File Storages",
+        "createLabel": "Create a new File Storage",
+        "createOrEditLabel": "Create or edit a File Storage",
+        "notFound": "No File Storages found"
+      },
+      "created": "A new File Storage is created with identifier {{ param }}",
+      "updated": "A File Storage is updated with identifier {{ param }}",
+      "deleted": "A File Storage is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete File Storage {{ id }}?"
+      },
+      "detail": {
+        "title": "File Storage"
+      },
+      "fileName": "File Name",
+      "fileType": "File Type",
+      "referenceCode": "Reference Code",
+      "narration": "Narration",
+      "areaFileTypeCode": "Area File Type Code",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

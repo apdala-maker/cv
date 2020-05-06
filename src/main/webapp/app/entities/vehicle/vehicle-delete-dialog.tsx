@@ -1,0 +1,70 @@
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { RouteComponentProps } from 'react-router-dom';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
+import { Translate, ICrudGetAction, ICrudDeleteAction } from 'react-jhipster';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { IVehicle } from 'app/shared/model/vehicle.model';
+import { IRootState } from 'app/shared/reducers';
+import { getEntity, deleteEntity } from './vehicle.reducer';
+
+export interface IVehicleDeleteDialogProps extends StateProps, DispatchProps, RouteComponentProps<{ id: string }> {}
+
+export const VehicleDeleteDialog = (props: IVehicleDeleteDialogProps) => {
+  useEffect(() => {
+    props.getEntity(props.match.params.id);
+  }, []);
+
+  const handleClose = () => {
+    props.history.push('/vehicle');
+  };
+
+  useEffect(() => {
+    if (props.updateSuccess) {
+      handleClose();
+    }
+  }, [props.updateSuccess]);
+
+  const confirmDelete = () => {
+    props.deleteEntity(props.vehicleEntity.id);
+  };
+
+  const { vehicleEntity } = props;
+  return (
+    <Modal isOpen toggle={handleClose}>
+      <ModalHeader toggle={handleClose}>
+        <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
+      </ModalHeader>
+      <ModalBody id="catchControlPanelApp.vehicle.delete.question">
+        <Translate contentKey="catchControlPanelApp.vehicle.delete.question" interpolate={{ id: vehicleEntity.id }}>
+          Are you sure you want to delete this Vehicle?
+        </Translate>
+      </ModalBody>
+      <ModalFooter>
+        <Button color="secondary" onClick={handleClose}>
+          <FontAwesomeIcon icon="ban" />
+          &nbsp;
+          <Translate contentKey="entity.action.cancel">Cancel</Translate>
+        </Button>
+        <Button id="jhi-confirm-delete-vehicle" color="danger" onClick={confirmDelete}>
+          <FontAwesomeIcon icon="trash" />
+          &nbsp;
+          <Translate contentKey="entity.action.delete">Delete</Translate>
+        </Button>
+      </ModalFooter>
+    </Modal>
+  );
+};
+
+const mapStateToProps = ({ vehicle }: IRootState) => ({
+  vehicleEntity: vehicle.entity,
+  updateSuccess: vehicle.updateSuccess
+});
+
+const mapDispatchToProps = { getEntity, deleteEntity };
+
+type StateProps = ReturnType<typeof mapStateToProps>;
+type DispatchProps = typeof mapDispatchToProps;
+
+export default connect(mapStateToProps, mapDispatchToProps)(VehicleDeleteDialog);

@@ -1,0 +1,46 @@
+{
+    "name": "PassengerLocationUpdate",
+    "fields": [
+        {
+            "fieldName": "passengerCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "locationData",
+            "otherEntityRelationshipName": "passengerLocationUpdate",
+            "relationshipName": "locationData",
+            "otherEntityField": "latitude",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200506092900",
+    "entityTableName": "passenger_location_update",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

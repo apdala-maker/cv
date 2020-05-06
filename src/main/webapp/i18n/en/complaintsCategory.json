@@ -1,0 +1,28 @@
+{
+  "catchControlPanelApp": {
+    "complaintsCategory": {
+      "home": {
+        "title": "Complaints Categories",
+        "createLabel": "Create a new Complaints Category",
+        "createOrEditLabel": "Create or edit a Complaints Category",
+        "notFound": "No Complaints Categories found"
+      },
+      "created": "A new Complaints Category is created with identifier {{ param }}",
+      "updated": "A Complaints Category is updated with identifier {{ param }}",
+      "deleted": "A Complaints Category is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Complaints Category {{ id }}?"
+      },
+      "detail": {
+        "title": "Complaints Category"
+      },
+      "categoryCode": "Category Code",
+      "description": "Description",
+      "audience": "Audience",
+      "urgencyScale": "Urgency Scale",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

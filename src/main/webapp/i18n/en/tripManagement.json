@@ -1,0 +1,38 @@
+{
+  "catchControlPanelApp": {
+    "tripManagement": {
+      "home": {
+        "title": "Trip Managements",
+        "createLabel": "Create a new Trip Management",
+        "createOrEditLabel": "Create or edit a Trip Management",
+        "notFound": "No Trip Managements found"
+      },
+      "created": "A new Trip Management is created with identifier {{ param }}",
+      "updated": "A Trip Management is updated with identifier {{ param }}",
+      "deleted": "A Trip Management is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Trip Management {{ id }}?"
+      },
+      "detail": {
+        "title": "Trip Management"
+      },
+      "areaCode": "Area Code",
+      "startime": "Startime",
+      "endtime": "Endtime",
+      "startLongitude": "Start Longitude",
+      "startLatitude": "Start Latitude",
+      "distance": "Distance",
+      "tripCost": "Trip Cost",
+      "driverCode": "Driver Code",
+      "passengerCode": "Passenger Code",
+      "status": "Status",
+      "tripCode": "Trip Code",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

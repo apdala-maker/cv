@@ -1,0 +1,39 @@
+{
+  "catchControlPanelApp": {
+    "customerTransaction": {
+      "home": {
+        "title": "Customer Transactions",
+        "createLabel": "Create a new Customer Transaction",
+        "createOrEditLabel": "Create or edit a Customer Transaction",
+        "notFound": "No Customer Transactions found"
+      },
+      "created": "A new Customer Transaction is created with identifier {{ param }}",
+      "updated": "A Customer Transaction is updated with identifier {{ param }}",
+      "deleted": "A Customer Transaction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Customer Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Customer Transaction"
+      },
+      "areaCode": "Area Code",
+      "recordNumber": "Record Number",
+      "customerCode": "Customer Code",
+      "driverCode": "Driver Code",
+      "debit": "Debit",
+      "credit": "Credit",
+      "narration": "Narration",
+      "transactionReference": "Transaction Reference",
+      "transactionCode": "Transaction Code",
+      "paymentChannel": "Payment Channel",
+      "isReversed": "Is Reversed",
+      "hashCode": "Hash Code",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

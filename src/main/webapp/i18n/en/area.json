@@ -1,0 +1,39 @@
+{
+  "catchControlPanelApp": {
+    "area": {
+      "home": {
+        "title": "Areas",
+        "createLabel": "Create a new Area",
+        "createOrEditLabel": "Create or edit a Area",
+        "notFound": "No Areas found"
+      },
+      "created": "A new Area is created with identifier {{ param }}",
+      "updated": "A Area is updated with identifier {{ param }}",
+      "deleted": "A Area is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Area {{ id }}?"
+      },
+      "detail": {
+        "title": "Area"
+      },
+      "countryCode": "Country Code",
+      "areaCode": "Area Code",
+      "address": "Address",
+      "name": "Name",
+      "northEastLatitude": "North East Latitude",
+      "southWestLatitude": "South West Latitude",
+      "northEastLongitude": "North East Longitude",
+      "southWestLongitude": "South West Longitude",
+      "isActive": "Is Active",
+      "isApproved": "Is Approved",
+      "approvedBy": "Approved By",
+      "activatedBy": "Activated By",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "catchControlPanelApp": {
+    "priceMongoModel": {
+      "home": {
+        "title": "Price Mongo Models",
+        "createLabel": "Create a new Price Mongo Model",
+        "createOrEditLabel": "Create or edit a Price Mongo Model",
+        "notFound": "No Price Mongo Models found"
+      },
+      "created": "A new Price Mongo Model is created with identifier {{ param }}",
+      "updated": "A Price Mongo Model is updated with identifier {{ param }}",
+      "deleted": "A Price Mongo Model is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Price Mongo Model {{ id }}?"
+      },
+      "detail": {
+        "title": "Price Mongo Model"
+      },
+      "amountToBePaid": "Amount To Be Paid",
+      "isPaid": "Is Paid"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "name": "ComplaintsCategory",
+    "fields": [
+        {
+            "fieldName": "categoryCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "audience",
+            "fieldType": "Audience",
+            "fieldValues": "DRIVERS,PASSENGER"
+        },
+        {
+            "fieldName": "urgencyScale",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506091800",
+    "entityTableName": "complaints_category",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

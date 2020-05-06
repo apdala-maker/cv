@@ -1,0 +1,27 @@
+{
+  "catchControlPanelApp": {
+    "vehicleDriver": {
+      "home": {
+        "title": "Vehicle Drivers",
+        "createLabel": "Create a new Vehicle Driver",
+        "createOrEditLabel": "Create or edit a Vehicle Driver",
+        "notFound": "No Vehicle Drivers found"
+      },
+      "created": "A new Vehicle Driver is created with identifier {{ param }}",
+      "updated": "A Vehicle Driver is updated with identifier {{ param }}",
+      "deleted": "A Vehicle Driver is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vehicle Driver {{ id }}?"
+      },
+      "detail": {
+        "title": "Vehicle Driver"
+      },
+      "modelCode": "Model Code",
+      "makeCode": "Make Code",
+      "vehicleTypeCode": "Vehicle Type Code",
+      "year": "Year",
+      "registrationNumber": "Registration Number",
+      "color": "Color"
+    }
+  }
+}

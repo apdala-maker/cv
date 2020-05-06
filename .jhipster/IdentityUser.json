@@ -1,0 +1,89 @@
+{
+    "name": "IdentityUser",
+    "fields": [
+        {
+            "fieldName": "userCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "affliateCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentRating",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "userType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "registrationStep",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isApproved",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "approvedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "activatedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "userProfileFileTypes",
+            "otherEntityRelationshipName": "identityUser",
+            "relationshipName": "userProfileFileTypes",
+            "otherEntityField": "profileImage"
+        }
+    ],
+    "changelogDate": "20200506091500",
+    "entityTableName": "identity_user",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

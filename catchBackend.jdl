@@ -1,0 +1,977 @@
+enum PaymentChannel {
+	CASH,
+	MOBILE_MONEY,
+	CARD,
+	WALLET
+}
+
+enum Category{
+	TRIP,
+	CHARGE,
+	WAITING_CHARGE, 
+	CANCELLATION_CHARGE
+}
+
+enum PartyCategory {
+	COLLECTOR, 
+	REMITTER, 
+	REVOLVING_FUND, 
+	SERVICE_PROVIDER
+}
+
+enum Audience {
+DRIVERS,
+PASSENGER
+} 
+
+enum ComplaintStatus {
+	NEW,
+	ACTIVE,
+	CLOSED
+}
+
+enum TripStatus {
+	STARTED,
+	ONGOING,
+	COMPLETED,
+	CANCELLED
+}
+
+enum TripType {
+	SCHEDULED,
+	NOT_SCHEDULED
+}
+
+
+entity ChartOfAccounts {
+	areaCode String,
+	accountCode String,
+	accountName String,
+	isCJAccount String,
+	cOAGroupCode String,
+	systemPosted String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+entity ChartOfAccountsGroup {
+	code String,
+	accountType String,
+	description String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity CustomerTransaction {
+	areaCode String,
+	recordNumber Long,
+	customerCode String,
+	driverCode String,
+	debit BigDecimal,
+	credit BigDecimal,
+	narration String,
+	transactionReference String,
+	transactionCode String,
+	paymentChannel PaymentChannel,
+	isReversed String,
+	hashCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity DriverTransaction {
+	areaCode String,
+	recordNumber Long,
+	customerCode String,
+	driverCode String,
+	debit BigDecimal,
+	credit BigDecimal,
+	narration String,
+	transactionReference String,
+	transactionCode String,
+	paymentChannel PaymentChannel,
+	isReversed String,
+	hashCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+entity JournalTransaction {
+	areaCode String,
+	recordNumber Long,
+	driverCode String,
+	debit BigDecimal,
+	credit BigDecimal,
+	transactionReference String,
+    narration String,
+    transactionDate LocalDate,
+    batchNumber String,
+	transactionCode String,
+	folio String,
+	hashCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+entity Price {
+	priceCode String,
+	startTime LocalDate,
+	endTime LocalDate,
+	pricePerMinute Float,
+	pricePerDistantUnit Float,
+	minimumSpeedForPricePerMinute Float,
+    areaCode String,
+    vehicleTypeCode String,
+    cancellationFee Float,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity PromoCodeTransaction {
+	code String,
+	recordNumber Long,
+	CustomerCode String,
+	DriverCode String,
+	debit BigDecimal,
+	credit BigDecimal,
+    narration String,
+    transactionReference String,
+    transactionCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+    
+}
+
+entity PromoCodes {
+	customerCode String,
+	code String,
+	status String,
+	areaCode String,
+	value BigDecimal,
+	startDate LocalDate,
+    expiryDate LocalDate,
+    iSAllDayTime Boolean,
+    applyAllArea Boolean,
+    isPercentage Boolean,
+    miniMumValue BigDecimal,
+    maximumValue BigDecimal,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+entity PromoCodes {
+	code String,
+	startHour Integer,
+	endHour Integer,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity ThirdPartyChargeDistributionSchedule {
+	code String,
+	partyCode String,
+	transactionCode String,
+	chargeMode String,
+	value String,
+	status String,
+	areaCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+
+entity TimeLimits {
+	areaCode String,
+	description String,
+	code String,
+	category String,
+	startHour Integer,
+	startMinute Integer,
+	endHour Integer,
+	endMinute Integer,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+entity TransactionCharge {
+	areaCode String,
+	code String,
+	category Category,
+	description String,
+	timeLimitCode String,
+	constantCharge BigDecimal,
+	chargePerKilometer BigDecimal,
+	chargePerMinute BigDecimal,
+	status String,
+	vehicleCode String,
+	totalMinimumCharge BigDecimal,
+	totalMaximumCharge BigDecimal,
+	minimumSpeed BigDecimal	,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity TransactionThirdParty {
+	areaCode String,
+	partyCategory PartyCategory,
+	code String,
+	name String,
+	country String,
+	countyOrState String,
+	postalCode String,
+	postalAddress String,
+	town String,
+	street String,
+	buildingNameOrNumber String, 
+	primaryPhoneNumber String,
+	secondayPhoneNumber String,
+	emailAddress String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity TransactionThirdParty {
+	areaCode String,
+	partyCategory PartyCategory,
+	code String,
+	name String,
+	country String,
+	countyOrState String,
+	postalCode String,
+	postalAddress String,
+	town String,
+	street String,
+	buildingNameOrNumber String, 
+	primaryPhoneNumber String,
+	secondayPhoneNumber String,
+	emailAddress String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity Area {
+	countryCode String,
+	areaCode String,
+	address String,
+	name String,
+	northEastLatitude String,
+	southWestLatitude String,
+	northEastLongitude String,
+	southWestLongitude String,
+	isActive Boolean,
+	isApproved Boolean,
+	approvedBy String,
+	activatedBy String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity AreaFileTypes {
+	code String,
+	areaCode String,
+	isManadatory Boolean,
+	description String,
+	hasExpiry Boolean,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+	
+}
+
+entity Country {
+	countryName String,
+	countryCode String,
+	currencyName String,
+	currencyCode String,
+	currencySymbol String,
+	language String,
+	timeZone String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+
+entity RestrictedArea {
+	areaCode String,
+	name String,
+	northEastLatitude String,
+	southWestLatitude String,
+	northEastLongitude String,
+	southWestLongitude String,
+	vehicleTypeCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+
+entity ApplicationRole {
+	access String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity ApplicationUser {
+	userCode String,
+	name String,
+	countryCode String,
+	areaCode String,
+	gender String,
+	companyCode String,
+	currentRating String,
+	userType String,
+	isActive Boolean,
+	currentRating Double,
+	isApproved Boolean,
+	approvedBy String,
+	activatedBy String,
+	imageUrl String,
+	dateCreated LocalDate,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+	
+}
+
+entity Device {
+	userCode String,
+	deviceId String,
+	version String,
+	model String,
+	screenSize String,
+	manufacture String,
+	macAddresses String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+}
+
+entity FcmTokens {
+	userCode String,
+	token String,
+	isActive Boolean,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+	
+}
+
+
+
+entity CodeGenerator {
+	seed String,
+	currentNumber Long,
+	numberCategory String,
+	prefix String,
+	characterCount Integer,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+	
+}
+
+
+entity Company {
+	displayName String,
+	legalOrTradingName String,
+	registrationNumber String,
+	registrationDate LocalDate,
+	companyCode String,
+	areaCode String,
+	countyOrState String,
+	postalCode String,
+	postalAddress String,
+	cityOrTown String,
+	street String,
+	buildingNameOrNumber String,
+	primaryPhoneNumber String,
+	secondaryPhoneNumber String,
+	emailAddress String,
+	website String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+
+entity FileStorage {
+	fileName String,
+	fileType String,
+	referenceCode String,
+	narration String,
+	areaFileTypeCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+
+entity SmsModel {
+	phoneNumber String,
+	message String,
+	isSend Boolean,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+  
+entity Review {
+	tripCode String,
+	userCode String,
+	rating Double,
+	areaCode String,
+	remarks String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+entity TripManagement {
+	areaCode String,
+	startime LocalDate,
+	endtime LocalDate,
+	startLongitude String,
+	startLatitude String,
+	distance Double,
+	tripCost BigDecimal,
+	driverCode String,
+	passengerCode String,
+	status String,
+	tripCode String,
+	
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+entity VehicleMake {
+	description String,
+	makeCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+  
+entity Vehicle {
+	modelName String,
+	modelCode String,
+	makeCode String,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}     
+       
+
+entity VehicleType {
+	areaCode String,
+	isMotorBike Boolean,
+	description String,
+	code String,
+	numberOfSeats Integer,
+	minimumCC Integer,
+	maximumCC Integer,
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+} 
+
+  
+
+entity VehicleMapping {
+	makeCode String,
+	userCode String,
+	modelCode String,
+	year Integer,
+	registrationNumber String,
+	vehicleTypeCode String, 
+	areaCode String,
+	isApproved Boolean,
+	approvedBy String,
+	
+	dateCreated LocalDate,
+	createdBy String,
+	creatorUserEmail String,
+	dateModified LocalDate,
+	modifiedBy String,
+	modifierUserEmail String
+
+}
+
+
+entity OTP {
+	PhoneNumber String,
+	userCode String,
+	areaCode String,
+	oTPCode String,
+	dateCreated LocalDate,
+	dateModified LocalDate
+
+}
+
+entity Rating {
+	userCode String,
+	value Double,
+	Remarks String,
+	dateCreated LocalDate,
+	dateModified LocalDate
+
+}
+
+
+
+
+entity IdentityUser {
+         userCode String, 
+        name String,
+        countryCode String,
+        areaCode String,
+        gender String,
+        companyCode String,
+        affliateCode String,
+        currentRating Double,
+        userType String,
+        isActive Boolean,
+        registrationStep String,
+        isApproved Boolean,
+        approvedBy String,
+        activatedBy String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+    
+    
+   entity  UserProfileFileTypes  {
+        iSActive Boolean,
+        profileImage String,
+        dateCreated LocalDate
+    }
+    
+    
+    entity PassengerIdentity
+    {
+        userCode String,
+       name String,
+        countryCode String,
+        areaCode String,
+       referralCode String,
+        gender String,
+        companyCode String,
+        currentRating Double,
+       userType String,
+          dateCreated LocalDate,
+	dateModified LocalDate
+    }
+    
+    
+    entity ComplaintsCategory {
+        categoryCode String,
+       description String,
+        audience Audience,
+       urgencyScale Integer,
+       areaCode String,
+       dateCreated LocalDate,
+	dateModified LocalDate
+    }
+    
+entity Complaints
+    {
+        userCode String,
+        category String,
+       description String,
+       audience Audience,
+        status ComplaintStatus,
+        feedBack String,
+        referenceCode String,
+            areaCode String,
+        	dateCreated LocalDate,
+	dateModified LocalDate
+
+    }
+    
+    
+    entity Lost
+    {
+        tripCode String,
+        dateLost LocalDate,
+        userCode String,
+        description String,
+        itemName String,
+        isFound Boolean,
+        referenceCode String,
+        areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    entity Found 
+    {
+       tripCode String,
+       dateFound LocalDate,
+        userCode String,
+        description String,
+        itemName String,
+       isReturned Boolean,
+        referenceCode String,
+            areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+    
+    entity DeviceInformation
+    {
+        userCode String,
+        userType String,
+        model String,
+        name String,
+        width Double,
+        length Double,
+        OS String,
+        manufacturer String,
+        deviceId String,
+        osVersion String,
+        brand String,
+        screenSize String,
+        serial String,
+        areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+    
+        entity VehicleDriver
+    {
+        modelCode String,
+        makeCode String,
+        vehicleTypeCode String,
+        year Integer,
+        registrationNumber String,
+        color String
+    }
+    
+    
+    
+    entity DriverLocationUpdate
+    {
+       driverCode String,
+       startTime LocalDate,
+       areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+   entity LocationData
+    {
+        latitude Double,
+        longitude Double,
+        bearing String
+    }
+        
+        relationship OneToOne  {
+   DriverLocationUpdate{LocationData(latitude)} to LocationData
+
+}
+    
+    
+    entity MongoFileTypes
+    {
+       fileName String,
+        fileType String,
+       narration String,
+        areaFileTypeCode String,
+        expiryDate LocalDate
+    }
+    
+    entity Driver
+    {
+       status String,
+        iSDriving Boolean,
+        ontrip String,
+        iSApproved Boolean,
+        driverCode String,
+        tripCount Integer,
+        areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+            relationship OneToOne  {
+   Driver{latestLocation(latitude)} to LocationData
+
+}
+        relationship ManyToOne  {
+   Driver{mongoFileTypes(fileName)} to MongoFileTypes
+
+}
+    
+           relationship OneToOne  {
+   Driver{MyVehicle(registrationNumber)} to VehicleDriver
+
+}
+        relationship ManyToOne  {
+   Complaints{complaintsCategory(categoryCode)} to ComplaintsCategory
+
+}
+    
+    relationship ManyToOne  {
+  IdentityUser {userProfileFileTypes(profileImage)} to UserProfileFileTypes
+
+}
+
+    relationship ManyToOne  {
+  PassengerIdentity {userProfileFileTypes(profileImage)} to UserProfileFileTypes
+
+}
+
+
+
+entity Passenger
+    {
+
+        status String,
+        passengerCode String,
+          areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+               relationship OneToOne  {
+   Passenger{latestLocation(latitude)} to LocationData
+
+}
+  entity PassengerLocationUpdate 
+    {
+       passengerCode String,
+        startTime LocalDate
+          areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+
+    }
+    
+            relationship OneToOne  {
+   PassengerLocationUpdate{LocationData(latitude)} to LocationData
+
+}
+
+
+entity OnlineTimes
+    {
+        start LocalDate,
+        finish LocalDate,
+        driverCode String,
+        areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+    
+     entity DriverOpenedAppTimes
+    {
+        driverCode String,
+        dateOpened LocalDate
+        tripCount Integer,
+        areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+    entity PriceMongoModel
+    {
+        amountToBePaid BigDecimal,
+       isPaid Boolean
+       
+    }
+    entity Stops
+    {
+        latitude String,
+        longitude String,
+         order Integer
+    }
+    entity UserLocation
+    {
+        latitude String,
+        longitude String,
+        tripCode String,
+        userCode String,
+         areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }
+    
+    entity Trip
+    {   tripCode String,
+        driverCode String,
+        vehicleCode String,
+        tripStatus TripStatus,
+        dateEnded LocalDate,
+        tripStartDate LocalDate,
+        arrivedDate LocalDate,
+        tripInitiatedDate LocalDate,
+        passengerCode String,
+        pickUpLongitude String,
+        pickUpLatitude String,
+        dropOfLatitude String,
+        dropOfLongitude String,
+        projectedAmount BigDecimal,
+        totalDistanceInMetresCoverd Integer,
+        actualAmountPaid BigDecimal,
+        cancelledBy String,
+        tripType TripType,
+           areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+        
+    }
+                relationship OneToOne  {
+   Trip{priceMongoModel(amountToBePaid)} to PriceMongoModel
+
+}
+
+    relationship ManyToOne  {
+    Trip{rating(value)} to Rating
+
+}
+
+  relationship ManyToOne  {
+    Trip{stops(latitude)} to Stops
+
+}
+
+
+entity TripQueue
+    {
+        tripCode String,
+        driverCode String,
+        passengerCode String,
+        status String,
+        areaCode String,
+        dateCreated LocalDate,
+	    dateModified LocalDate
+    }

@@ -1,0 +1,10 @@
+{
+  "catchControlPanelApp": {
+    "ComplaintStatus": {
+      "null": "",
+      "NEW": "NEW",
+      "ACTIVE": "ACTIVE",
+      "CLOSED": "CLOSED"
+    }
+  }
+}

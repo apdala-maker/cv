@@ -1,0 +1,126 @@
+{
+    "name": "Trip",
+    "fields": [
+        {
+            "fieldName": "tripCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driverCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vehicleCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tripStatus",
+            "fieldType": "TripStatus",
+            "fieldValues": "STARTED,ONGOING,COMPLETED,CANCELLED"
+        },
+        {
+            "fieldName": "dateEnded",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "tripStartDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "arrivedDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "tripInitiatedDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "passengerCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pickUpLongitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pickUpLatitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dropOfLatitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dropOfLongitude",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projectedAmount",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "totalDistanceInMetresCoverd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualAmountPaid",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "cancelledBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tripType",
+            "fieldType": "TripType",
+            "fieldValues": "SCHEDULED,NOT_SCHEDULED"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "priceMongoModel",
+            "otherEntityRelationshipName": "trip",
+            "relationshipName": "priceMongoModel",
+            "otherEntityField": "amountToBePaid",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "rating",
+            "otherEntityRelationshipName": "trip",
+            "relationshipName": "rating",
+            "otherEntityField": "value"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "stops",
+            "otherEntityRelationshipName": "trip",
+            "relationshipName": "stops",
+            "otherEntityField": "latitude"
+        }
+    ],
+    "changelogDate": "20200506093500",
+    "entityTableName": "trip",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

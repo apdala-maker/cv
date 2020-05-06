@@ -1,0 +1,24 @@
+{
+  "catchControlPanelApp": {
+    "stops": {
+      "home": {
+        "title": "Stops",
+        "createLabel": "Create a new Stops",
+        "createOrEditLabel": "Create or edit a Stops",
+        "notFound": "No Stops found"
+      },
+      "created": "A new Stops is created with identifier {{ param }}",
+      "updated": "A Stops is updated with identifier {{ param }}",
+      "deleted": "A Stops is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stops {{ id }}?"
+      },
+      "detail": {
+        "title": "Stops"
+      },
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "order": "Order"
+    }
+  }
+}

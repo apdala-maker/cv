@@ -1,0 +1,27 @@
+{
+  "catchControlPanelApp": {
+    "passengerLocationUpdate": {
+      "home": {
+        "title": "Passenger Location Updates",
+        "createLabel": "Create a new Passenger Location Update",
+        "createOrEditLabel": "Create or edit a Passenger Location Update",
+        "notFound": "No Passenger Location Updates found"
+      },
+      "created": "A new Passenger Location Update is created with identifier {{ param }}",
+      "updated": "A Passenger Location Update is updated with identifier {{ param }}",
+      "deleted": "A Passenger Location Update is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Passenger Location Update {{ id }}?"
+      },
+      "detail": {
+        "title": "Passenger Location Update"
+      },
+      "passengerCode": "Passenger Code",
+      "startTime": "Start Time",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "locationData": "Location Data"
+    }
+  }
+}

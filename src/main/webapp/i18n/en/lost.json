@@ -1,0 +1,31 @@
+{
+  "catchControlPanelApp": {
+    "lost": {
+      "home": {
+        "title": "Losts",
+        "createLabel": "Create a new Lost",
+        "createOrEditLabel": "Create or edit a Lost",
+        "notFound": "No Losts found"
+      },
+      "created": "A new Lost is created with identifier {{ param }}",
+      "updated": "A Lost is updated with identifier {{ param }}",
+      "deleted": "A Lost is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Lost {{ id }}?"
+      },
+      "detail": {
+        "title": "Lost"
+      },
+      "tripCode": "Trip Code",
+      "dateLost": "Date Lost",
+      "userCode": "User Code",
+      "description": "Description",
+      "itemName": "Item Name",
+      "isFound": "Is Found",
+      "referenceCode": "Reference Code",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

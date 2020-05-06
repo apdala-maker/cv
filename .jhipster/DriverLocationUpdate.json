@@ -1,0 +1,46 @@
+{
+    "name": "DriverLocationUpdate",
+    "fields": [
+        {
+            "fieldName": "driverCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "locationData",
+            "otherEntityRelationshipName": "driverLocationUpdate",
+            "relationshipName": "locationData",
+            "otherEntityField": "latitude",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200506092400",
+    "entityTableName": "driver_location_update",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,24 @@
+{
+  "catchControlPanelApp": {
+    "locationData": {
+      "home": {
+        "title": "Location Data",
+        "createLabel": "Create a new Location Data",
+        "createOrEditLabel": "Create or edit a Location Data",
+        "notFound": "No Location Data found"
+      },
+      "created": "A new Location Data is created with identifier {{ param }}",
+      "updated": "A Location Data is updated with identifier {{ param }}",
+      "deleted": "A Location Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Location Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Location Data"
+      },
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "bearing": "Bearing"
+    }
+  }
+}

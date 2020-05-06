@@ -1,0 +1,67 @@
+{
+    "name": "Complaints",
+    "fields": [
+        {
+            "fieldName": "userCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "category",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "audience",
+            "fieldType": "Audience",
+            "fieldValues": "DRIVERS,PASSENGER"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "ComplaintStatus",
+            "fieldValues": "NEW,ACTIVE,CLOSED"
+        },
+        {
+            "fieldName": "feedBack",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "referenceCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "complaintsCategory",
+            "otherEntityRelationshipName": "complaints",
+            "relationshipName": "complaintsCategory",
+            "otherEntityField": "categoryCode"
+        }
+    ],
+    "changelogDate": "20200506091900",
+    "entityTableName": "complaints",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

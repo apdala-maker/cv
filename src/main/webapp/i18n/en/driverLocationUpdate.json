@@ -1,0 +1,27 @@
+{
+  "catchControlPanelApp": {
+    "driverLocationUpdate": {
+      "home": {
+        "title": "Driver Location Updates",
+        "createLabel": "Create a new Driver Location Update",
+        "createOrEditLabel": "Create or edit a Driver Location Update",
+        "notFound": "No Driver Location Updates found"
+      },
+      "created": "A new Driver Location Update is created with identifier {{ param }}",
+      "updated": "A Driver Location Update is updated with identifier {{ param }}",
+      "deleted": "A Driver Location Update is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Driver Location Update {{ id }}?"
+      },
+      "detail": {
+        "title": "Driver Location Update"
+      },
+      "driverCode": "Driver Code",
+      "startTime": "Start Time",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified",
+      "locationData": "Location Data"
+    }
+  }
+}

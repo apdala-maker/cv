@@ -1,0 +1,27 @@
+{
+  "catchControlPanelApp": {
+    "driverOpenedAppTimes": {
+      "home": {
+        "title": "Driver Opened App Times",
+        "createLabel": "Create a new Driver Opened App Times",
+        "createOrEditLabel": "Create or edit a Driver Opened App Times",
+        "notFound": "No Driver Opened App Times found"
+      },
+      "created": "A new Driver Opened App Times is created with identifier {{ param }}",
+      "updated": "A Driver Opened App Times is updated with identifier {{ param }}",
+      "deleted": "A Driver Opened App Times is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Driver Opened App Times {{ id }}?"
+      },
+      "detail": {
+        "title": "Driver Opened App Times"
+      },
+      "driverCode": "Driver Code",
+      "dateOpened": "Date Opened",
+      "tripCount": "Trip Count",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "name": "Price",
+    "fields": [
+        {
+            "fieldName": "priceCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "startTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "endTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "pricePerMinute",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "pricePerDistantUnit",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "minimumSpeedForPricePerMinute",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vehicleTypeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cancellationFee",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creatorUserEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifierUserEmail",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506084800",
+    "entityTableName": "price",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,77 @@
+{
+    "name": "Driver",
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iSDriving",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "ontrip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "iSApproved",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "driverCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tripCount",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "locationData",
+            "otherEntityRelationshipName": "driver",
+            "relationshipName": "latestLocation",
+            "otherEntityField": "latitude",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "vehicleDriver",
+            "otherEntityRelationshipName": "driver",
+            "relationshipName": "myVehicle",
+            "otherEntityField": "registrationNumber",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "mongoFileTypes",
+            "otherEntityRelationshipName": "driver",
+            "relationshipName": "mongoFileTypes",
+            "otherEntityField": "fileName"
+        }
+    ],
+    "changelogDate": "20200506092700",
+    "entityTableName": "driver",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

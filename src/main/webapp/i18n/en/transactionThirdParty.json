@@ -1,0 +1,41 @@
+{
+  "catchControlPanelApp": {
+    "transactionThirdParty": {
+      "home": {
+        "title": "Transaction Third Parties",
+        "createLabel": "Create a new Transaction Third Party",
+        "createOrEditLabel": "Create or edit a Transaction Third Party",
+        "notFound": "No Transaction Third Parties found"
+      },
+      "created": "A new Transaction Third Party is created with identifier {{ param }}",
+      "updated": "A Transaction Third Party is updated with identifier {{ param }}",
+      "deleted": "A Transaction Third Party is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Transaction Third Party {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaction Third Party"
+      },
+      "areaCode": "Area Code",
+      "partyCategory": "Party Category",
+      "code": "Code",
+      "name": "Name",
+      "country": "Country",
+      "countyOrState": "County Or State",
+      "postalCode": "Postal Code",
+      "postalAddress": "Postal Address",
+      "town": "Town",
+      "street": "Street",
+      "buildingNameOrNumber": "Building Name Or Number",
+      "primaryPhoneNumber": "Primary Phone Number",
+      "secondayPhoneNumber": "Seconday Phone Number",
+      "emailAddress": "Email Address",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

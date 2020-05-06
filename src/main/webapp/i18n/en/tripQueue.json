@@ -1,0 +1,28 @@
+{
+  "catchControlPanelApp": {
+    "tripQueue": {
+      "home": {
+        "title": "Trip Queues",
+        "createLabel": "Create a new Trip Queue",
+        "createOrEditLabel": "Create or edit a Trip Queue",
+        "notFound": "No Trip Queues found"
+      },
+      "created": "A new Trip Queue is created with identifier {{ param }}",
+      "updated": "A Trip Queue is updated with identifier {{ param }}",
+      "deleted": "A Trip Queue is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Trip Queue {{ id }}?"
+      },
+      "detail": {
+        "title": "Trip Queue"
+      },
+      "tripCode": "Trip Code",
+      "driverCode": "Driver Code",
+      "passengerCode": "Passenger Code",
+      "status": "Status",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

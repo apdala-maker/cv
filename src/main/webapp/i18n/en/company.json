@@ -1,0 +1,43 @@
+{
+  "catchControlPanelApp": {
+    "company": {
+      "home": {
+        "title": "Companies",
+        "createLabel": "Create a new Company",
+        "createOrEditLabel": "Create or edit a Company",
+        "notFound": "No Companies found"
+      },
+      "created": "A new Company is created with identifier {{ param }}",
+      "updated": "A Company is updated with identifier {{ param }}",
+      "deleted": "A Company is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Company {{ id }}?"
+      },
+      "detail": {
+        "title": "Company"
+      },
+      "displayName": "Display Name",
+      "legalOrTradingName": "Legal Or Trading Name",
+      "registrationNumber": "Registration Number",
+      "registrationDate": "Registration Date",
+      "companyCode": "Company Code",
+      "areaCode": "Area Code",
+      "countyOrState": "County Or State",
+      "postalCode": "Postal Code",
+      "postalAddress": "Postal Address",
+      "cityOrTown": "City Or Town",
+      "street": "Street",
+      "buildingNameOrNumber": "Building Name Or Number",
+      "primaryPhoneNumber": "Primary Phone Number",
+      "secondaryPhoneNumber": "Secondary Phone Number",
+      "emailAddress": "Email Address",
+      "website": "Website",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

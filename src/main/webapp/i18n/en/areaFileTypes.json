@@ -1,0 +1,32 @@
+{
+  "catchControlPanelApp": {
+    "areaFileTypes": {
+      "home": {
+        "title": "Area File Types",
+        "createLabel": "Create a new Area File Types",
+        "createOrEditLabel": "Create or edit a Area File Types",
+        "notFound": "No Area File Types found"
+      },
+      "created": "A new Area File Types is created with identifier {{ param }}",
+      "updated": "A Area File Types is updated with identifier {{ param }}",
+      "deleted": "A Area File Types is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Area File Types {{ id }}?"
+      },
+      "detail": {
+        "title": "Area File Types"
+      },
+      "code": "Code",
+      "areaCode": "Area Code",
+      "isManadatory": "Is Manadatory",
+      "description": "Description",
+      "hasExpiry": "Has Expiry",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

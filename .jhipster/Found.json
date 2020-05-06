@@ -1,0 +1,57 @@
+{
+    "name": "Found",
+    "fields": [
+        {
+            "fieldName": "tripCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateFound",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "userCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "itemName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isReturned",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "referenceCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506092100",
+    "entityTableName": "found",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

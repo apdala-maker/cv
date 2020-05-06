@@ -1,0 +1,39 @@
+{
+  "catchControlPanelApp": {
+    "journalTransaction": {
+      "home": {
+        "title": "Journal Transactions",
+        "createLabel": "Create a new Journal Transaction",
+        "createOrEditLabel": "Create or edit a Journal Transaction",
+        "notFound": "No Journal Transactions found"
+      },
+      "created": "A new Journal Transaction is created with identifier {{ param }}",
+      "updated": "A Journal Transaction is updated with identifier {{ param }}",
+      "deleted": "A Journal Transaction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Journal Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Journal Transaction"
+      },
+      "areaCode": "Area Code",
+      "recordNumber": "Record Number",
+      "driverCode": "Driver Code",
+      "debit": "Debit",
+      "credit": "Credit",
+      "transactionReference": "Transaction Reference",
+      "narration": "Narration",
+      "transactionDate": "Transaction Date",
+      "batchNumber": "Batch Number",
+      "transactionCode": "Transaction Code",
+      "folio": "Folio",
+      "hashCode": "Hash Code",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

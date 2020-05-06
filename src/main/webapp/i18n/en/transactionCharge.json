@@ -1,0 +1,40 @@
+{
+  "catchControlPanelApp": {
+    "transactionCharge": {
+      "home": {
+        "title": "Transaction Charges",
+        "createLabel": "Create a new Transaction Charge",
+        "createOrEditLabel": "Create or edit a Transaction Charge",
+        "notFound": "No Transaction Charges found"
+      },
+      "created": "A new Transaction Charge is created with identifier {{ param }}",
+      "updated": "A Transaction Charge is updated with identifier {{ param }}",
+      "deleted": "A Transaction Charge is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Transaction Charge {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaction Charge"
+      },
+      "areaCode": "Area Code",
+      "code": "Code",
+      "category": "Category",
+      "description": "Description",
+      "timeLimitCode": "Time Limit Code",
+      "constantCharge": "Constant Charge",
+      "chargePerKilometer": "Charge Per Kilometer",
+      "chargePerMinute": "Charge Per Minute",
+      "status": "Status",
+      "vehicleCode": "Vehicle Code",
+      "totalMinimumCharge": "Total Minimum Charge",
+      "totalMaximumCharge": "Total Maximum Charge",
+      "minimumSpeed": "Minimum Speed",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

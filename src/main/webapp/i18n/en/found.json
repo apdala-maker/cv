@@ -1,0 +1,31 @@
+{
+  "catchControlPanelApp": {
+    "found": {
+      "home": {
+        "title": "Founds",
+        "createLabel": "Create a new Found",
+        "createOrEditLabel": "Create or edit a Found",
+        "notFound": "No Founds found"
+      },
+      "created": "A new Found is created with identifier {{ param }}",
+      "updated": "A Found is updated with identifier {{ param }}",
+      "deleted": "A Found is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Found {{ id }}?"
+      },
+      "detail": {
+        "title": "Found"
+      },
+      "tripCode": "Trip Code",
+      "dateFound": "Date Found",
+      "userCode": "User Code",
+      "description": "Description",
+      "itemName": "Item Name",
+      "isReturned": "Is Returned",
+      "referenceCode": "Reference Code",
+      "areaCode": "Area Code",
+      "dateCreated": "Date Created",
+      "dateModified": "Date Modified"
+    }
+  }
+}

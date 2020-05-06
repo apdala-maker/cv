@@ -1,0 +1,25 @@
+{
+    "name": "PriceMongoModel",
+    "fields": [
+        {
+            "fieldName": "amountToBePaid",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "isPaid",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506093200",
+    "entityTableName": "price_mongo_model",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

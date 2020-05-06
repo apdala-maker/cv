@@ -1,0 +1,33 @@
+{
+  "catchControlPanelApp": {
+    "chartOfAccounts": {
+      "home": {
+        "title": "Chart Of Accounts",
+        "createLabel": "Create a new Chart Of Accounts",
+        "createOrEditLabel": "Create or edit a Chart Of Accounts",
+        "notFound": "No Chart Of Accounts found"
+      },
+      "created": "A new Chart Of Accounts is created with identifier {{ param }}",
+      "updated": "A Chart Of Accounts is updated with identifier {{ param }}",
+      "deleted": "A Chart Of Accounts is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Chart Of Accounts {{ id }}?"
+      },
+      "detail": {
+        "title": "Chart Of Accounts"
+      },
+      "areaCode": "Area Code",
+      "accountCode": "Account Code",
+      "accountName": "Account Name",
+      "isCJAccount": "Is CJ Account",
+      "cOAGroupCode": "C OA Group Code",
+      "systemPosted": "System Posted",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

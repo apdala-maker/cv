@@ -1,0 +1,69 @@
+{
+    "name": "PassengerIdentity",
+    "fields": [
+        {
+            "fieldName": "userCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "referralCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currentRating",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "userType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "userProfileFileTypes",
+            "otherEntityRelationshipName": "passengerIdentity",
+            "relationshipName": "userProfileFileTypes",
+            "otherEntityField": "profileImage"
+        }
+    ],
+    "changelogDate": "20200506091700",
+    "entityTableName": "passenger_identity",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

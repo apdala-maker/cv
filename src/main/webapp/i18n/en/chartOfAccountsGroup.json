@@ -1,0 +1,30 @@
+{
+  "catchControlPanelApp": {
+    "chartOfAccountsGroup": {
+      "home": {
+        "title": "Chart Of Accounts Groups",
+        "createLabel": "Create a new Chart Of Accounts Group",
+        "createOrEditLabel": "Create or edit a Chart Of Accounts Group",
+        "notFound": "No Chart Of Accounts Groups found"
+      },
+      "created": "A new Chart Of Accounts Group is created with identifier {{ param }}",
+      "updated": "A Chart Of Accounts Group is updated with identifier {{ param }}",
+      "deleted": "A Chart Of Accounts Group is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Chart Of Accounts Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Chart Of Accounts Group"
+      },
+      "code": "Code",
+      "accountType": "Account Type",
+      "description": "Description",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

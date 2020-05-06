@@ -1,0 +1,30 @@
+{
+  "catchControlPanelApp": {
+    "fcmTokens": {
+      "home": {
+        "title": "Fcm Tokens",
+        "createLabel": "Create a new Fcm Tokens",
+        "createOrEditLabel": "Create or edit a Fcm Tokens",
+        "notFound": "No Fcm Tokens found"
+      },
+      "created": "A new Fcm Tokens is created with identifier {{ param }}",
+      "updated": "A Fcm Tokens is updated with identifier {{ param }}",
+      "deleted": "A Fcm Tokens is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fcm Tokens {{ id }}?"
+      },
+      "detail": {
+        "title": "Fcm Tokens"
+      },
+      "userCode": "User Code",
+      "token": "Token",
+      "isActive": "Is Active",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

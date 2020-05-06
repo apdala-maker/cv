@@ -1,0 +1,11 @@
+{
+  "catchControlPanelApp": {
+    "TripStatus": {
+      "null": "",
+      "STARTED": "STARTED",
+      "ONGOING": "ONGOING",
+      "COMPLETED": "COMPLETED",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

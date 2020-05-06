@@ -1,0 +1,30 @@
+{
+  "catchControlPanelApp": {
+    "smsModel": {
+      "home": {
+        "title": "Sms Models",
+        "createLabel": "Create a new Sms Model",
+        "createOrEditLabel": "Create or edit a Sms Model",
+        "notFound": "No Sms Models found"
+      },
+      "created": "A new Sms Model is created with identifier {{ param }}",
+      "updated": "A Sms Model is updated with identifier {{ param }}",
+      "deleted": "A Sms Model is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sms Model {{ id }}?"
+      },
+      "detail": {
+        "title": "Sms Model"
+      },
+      "phoneNumber": "Phone Number",
+      "message": "Message",
+      "isSend": "Is Send",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

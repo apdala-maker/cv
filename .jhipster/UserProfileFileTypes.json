@@ -1,0 +1,29 @@
+{
+    "name": "UserProfileFileTypes",
+    "fields": [
+        {
+            "fieldName": "iSActive",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "profileImage",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506091600",
+    "entityTableName": "user_profile_file_types",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

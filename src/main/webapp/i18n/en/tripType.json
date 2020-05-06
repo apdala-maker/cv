@@ -1,0 +1,9 @@
+{
+  "catchControlPanelApp": {
+    "TripType": {
+      "null": "",
+      "SCHEDULED": "SCHEDULED",
+      "NOT_SCHEDULED": "NOT_SCHEDULED"
+    }
+  }
+}

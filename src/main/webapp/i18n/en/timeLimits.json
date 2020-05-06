@@ -1,0 +1,35 @@
+{
+  "catchControlPanelApp": {
+    "timeLimits": {
+      "home": {
+        "title": "Time Limits",
+        "createLabel": "Create a new Time Limits",
+        "createOrEditLabel": "Create or edit a Time Limits",
+        "notFound": "No Time Limits found"
+      },
+      "created": "A new Time Limits is created with identifier {{ param }}",
+      "updated": "A Time Limits is updated with identifier {{ param }}",
+      "deleted": "A Time Limits is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Time Limits {{ id }}?"
+      },
+      "detail": {
+        "title": "Time Limits"
+      },
+      "areaCode": "Area Code",
+      "description": "Description",
+      "code": "Code",
+      "category": "Category",
+      "startHour": "Start Hour",
+      "startMinute": "Start Minute",
+      "endHour": "End Hour",
+      "endMinute": "End Minute",
+      "dateCreated": "Date Created",
+      "createdBy": "Created By",
+      "creatorUserEmail": "Creator User Email",
+      "dateModified": "Date Modified",
+      "modifiedBy": "Modified By",
+      "modifierUserEmail": "Modifier User Email"
+    }
+  }
+}

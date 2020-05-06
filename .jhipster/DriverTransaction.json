@@ -1,0 +1,90 @@
+{
+    "name": "DriverTransaction",
+    "fields": [
+        {
+            "fieldName": "areaCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "recordNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "customerCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "driverCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "debit",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "credit",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "narration",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "transactionReference",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "transactionCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "paymentChannel",
+            "fieldType": "PaymentChannel",
+            "fieldValues": "CASH,MOBILE_MONEY,CARD,WALLET"
+        },
+        {
+            "fieldName": "isReversed",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hashCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createdBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creatorUserEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateModified",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "modifiedBy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modifierUserEmail",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200506084600",
+    "entityTableName": "driver_transaction",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
