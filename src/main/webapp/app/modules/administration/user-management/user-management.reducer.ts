@@ -106,7 +106,7 @@ export default (state: UserManagementState = initialState, action): UserManageme
   }
 };
 
-const apiUrl = 'api/users';
+const apiUrl = 'api/v1/catch/auth/get-all-users/AR00000006';
 // Actions
 export const getUsers: ICrudGetAllAction<IUser> = (page, size, sort) => {
   const requestUrl = `${apiUrl}${sort ? `?page=${page}&size=${size}&sort=${sort}` : ''}`;
@@ -129,10 +129,11 @@ export const getUser: ICrudGetAction<IUser> = id => {
   };
 };
 
+const createUrl = 'api/v1/catch/register';
 export const createUser: ICrudPutAction<IUser> = user => async dispatch => {
   const result = await dispatch({
     type: ACTION_TYPES.CREATE_USER,
-    payload: axios.post(apiUrl, user)
+    payload: axios.post(createUrl, user)
   });
   dispatch(getUsers());
   return result;

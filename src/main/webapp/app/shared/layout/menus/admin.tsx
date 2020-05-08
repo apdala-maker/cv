@@ -14,8 +14,8 @@ const adminMenuItems = (
     <MenuItem icon="tachometer-alt" to="/admin/metrics">
       <Translate contentKey="global.menu.admin.metrics">Metrics</Translate>
     </MenuItem>
-    <MenuItem icon="heart" to="/admin/health">
-      <Translate contentKey="global.menu.admin.health">Health</Translate>
+    <MenuItem icon="heart" to="/entity/application-role">
+      <Translate contentKey="catchControlPanelApp.applicationRole.home.title">Roles</Translate>
     </MenuItem>
     <MenuItem icon="list" to="/admin/configuration">
       <Translate contentKey="global.menu.admin.configuration">Configuration</Translate>

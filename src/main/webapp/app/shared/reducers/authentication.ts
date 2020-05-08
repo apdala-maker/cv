@@ -58,6 +58,13 @@ export default (state: AuthenticationState = initialState, action): Authenticati
       };
     case SUCCESS(ACTION_TYPES.LOGIN): {
       const isAuthenticated = action.payload && action.payload.data && action.payload.data.token;
+      const newAccount = {
+        token: action.payload.data.token,
+        fullName: action.payload.data.fullName,
+        email: action.payload.data.email,
+        id: action.payload.data.id,
+        authorities: ['ROLE_ADMIN', 'ROLE_USER']
+      };
       return {
         ...state,
         loading: false,
@@ -66,7 +73,7 @@ export default (state: AuthenticationState = initialState, action): Authenticati
         loginSuccess: true,
         isAuthenticated,
         sessionHasBeenFetched: true,
-        account: action.payload.data
+        account: newAccount
       };
     }
     case ACTION_TYPES.LOGOUT:
@@ -124,14 +131,11 @@ export const login = (username, password, rememberMe = false) => async (dispatch
     payload: axios.post('api/v1/catch/login', { email, password, rememberMe })
   });
   // const bearerToken = result.value.headers.authorization;
-  const bearerToken = result.value.token;
-  if (bearerToken && bearerToken.slice(0, 7) === 'Bearer ') {
-    const jwt = bearerToken.slice(7, bearerToken.length);
-    if (rememberMe) {
-      Storage.local.set(AUTH_TOKEN_KEY, jwt);
-    } else {
-      Storage.session.set(AUTH_TOKEN_KEY, jwt);
-    }
+  const jwt = result.value.data.token;
+  if (rememberMe) {
+    Storage.local.set(AUTH_TOKEN_KEY, jwt);
+  } else {
+    Storage.session.set(AUTH_TOKEN_KEY, jwt);
   }
   // await dispatch(getSession());
 };

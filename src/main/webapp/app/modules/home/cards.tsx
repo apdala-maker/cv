@@ -31,11 +31,11 @@ export default class Cards extends Component {
                       actions={[
                         /* eslint react/jsx-key: 0 */
                         /* eslint no-constant-condition: "error" */
-                        <Link to={{ pathname: `/entity/transaction/new`, state: { id: null ? null : null } }}>
+                        <Link to={{ pathname: `/entity/application-role`, state: { id: null ? null : null } }}>
                           <PlusCircleOutlined  type="plus" />
                         </Link>,
                         /* eslint react/jsx-key: 0 */
-                        <Link to="/entity/transaction">
+                        <Link to="/entity/application-role">
                           <SearchOutlined  type="search" />
                         </Link>,
                         /* eslint react/jsx-key: 0 */

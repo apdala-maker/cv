@@ -133,10 +133,7 @@ class SideDrawer extends React.Component<IDrawerProps, IDrawerState> {
           </ListItem>
         </List>
         <List>
-          <ListItem
-            button
-            key={'Blood Group'}
-          >
+          <ListItem button key={'Blood Group'}>
             <ListItemIcon>
               <div style={{ width: 20, height: 20, color: 'white', marginLeft: 6 }}>
                 <Tooltip placement="right" title={account.login}>

@@ -2,7 +2,7 @@
   "catchControlPanelApp": {
     "applicationRole": {
       "home": {
-        "title": "Application Roles",
+        "title": "Roles",
         "createLabel": "Create a new Application Role",
         "createOrEditLabel": "Create or edit a Application Role",
         "notFound": "No Application Roles found"
@@ -16,7 +16,9 @@
       "detail": {
         "title": "Application Role"
       },
-      "access": "Access",
+      "id": "ID",
+      "name": "Role Name",
+      "access": "Role Name",
       "dateCreated": "Date Created",
       "createdBy": "Created By",
       "creatorUserEmail": "Creator User Email",

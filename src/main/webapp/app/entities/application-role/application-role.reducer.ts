@@ -8,6 +8,7 @@ import { IApplicationRole, defaultValue } from 'app/shared/model/application-rol
 
 export const ACTION_TYPES = {
   FETCH_APPLICATIONROLE_LIST: 'applicationRole/FETCH_APPLICATIONROLE_LIST',
+  FETCH_ALLPOSSIBLEROLES: 'applicationRole/FETCH_ALLPOSSIBLEROLES',
   FETCH_APPLICATIONROLE: 'applicationRole/FETCH_APPLICATIONROLE',
   CREATE_APPLICATIONROLE: 'applicationRole/CREATE_APPLICATIONROLE',
   UPDATE_APPLICATIONROLE: 'applicationRole/UPDATE_APPLICATIONROLE',
@@ -18,10 +19,12 @@ export const ACTION_TYPES = {
 const initialState = {
   loading: false,
   errorMessage: null,
-  entities: [] as ReadonlyArray<IApplicationRole>,
+  allRoles: [] as ReadonlyArray<IApplicationRole>,
+  allPossibleRoles: [] as ReadonlyArray<IApplicationRole>,
   entity: defaultValue,
   updating: false,
-  updateSuccess: false
+  updateSuccess: false,
+  allPossibleSuccess: false
 };
 
 export type ApplicationRoleState = Readonly<typeof initialState>;
@@ -47,7 +50,15 @@ export default (state: ApplicationRoleState = initialState, action): Application
         updateSuccess: false,
         updating: true
       };
+    case REQUEST(ACTION_TYPES.FETCH_ALLPOSSIBLEROLES):
+      return {
+        ...state,
+        errorMessage: null,
+        updateSuccess: false,
+        updating: true
+      };
     case FAILURE(ACTION_TYPES.FETCH_APPLICATIONROLE_LIST):
+    case FAILURE(ACTION_TYPES.FETCH_ALLPOSSIBLEROLES):
     case FAILURE(ACTION_TYPES.FETCH_APPLICATIONROLE):
     case FAILURE(ACTION_TYPES.CREATE_APPLICATIONROLE):
     case FAILURE(ACTION_TYPES.UPDATE_APPLICATIONROLE):
@@ -63,7 +74,14 @@ export default (state: ApplicationRoleState = initialState, action): Application
       return {
         ...state,
         loading: false,
-        entities: action.payload.data
+        allRoles: action.payload.data
+      };
+    case SUCCESS(ACTION_TYPES.FETCH_ALLPOSSIBLEROLES):
+      return {
+        ...state,
+        loading: false,
+        allPossibleSuccess: true,
+        allPossibleRoles: action.payload.data
       };
     case SUCCESS(ACTION_TYPES.FETCH_APPLICATIONROLE):
       return {
@@ -95,17 +113,22 @@ export default (state: ApplicationRoleState = initialState, action): Application
   }
 };
 
-const apiUrl = 'api/application-roles';
+const fetchUrl = 'api/v1/catch/get-all-created-roles';
 
 // Actions
 
-export const getEntities: ICrudGetAllAction<IApplicationRole> = (page, size, sort) => ({
+export const getCreatedRoles: ICrudGetAllAction<IApplicationRole> = (page, size, sort) => ({
   type: ACTION_TYPES.FETCH_APPLICATIONROLE_LIST,
-  payload: axios.get<IApplicationRole>(`${apiUrl}?cacheBuster=${new Date().getTime()}`)
+  payload: axios.get<IApplicationRole>(`${fetchUrl}`)
 });
 
+const fetchAllPossibleRoles = '/api/v1/catch/auth/get-all-possible-roles';
+export const getAllPossibleRoles: ICrudGetAllAction<IApplicationRole> = (page, size, sort) => ({
+  type: ACTION_TYPES.FETCH_ALLPOSSIBLEROLES,
+  payload: axios.get<IApplicationRole>(`${fetchAllPossibleRoles}`)
+});
 export const getEntity: ICrudGetAction<IApplicationRole> = id => {
-  const requestUrl = `${apiUrl}/${id}`;
+  const requestUrl = `${fetchUrl}/${id}`;
   return {
     type: ACTION_TYPES.FETCH_APPLICATIONROLE,
     payload: axios.get<IApplicationRole>(requestUrl)
@@ -115,22 +138,22 @@ export const getEntity: ICrudGetAction<IApplicationRole> = id => {
 export const createEntity: ICrudPutAction<IApplicationRole> = entity => async dispatch => {
   const result = await dispatch({
     type: ACTION_TYPES.CREATE_APPLICATIONROLE,
-    payload: axios.post(apiUrl, cleanEntity(entity))
+    payload: axios.post(fetchUrl, cleanEntity(entity))
   });
-  dispatch(getEntities());
+  dispatch(getCreatedRoles());
   return result;
 };
 
-export const updateEntity: ICrudPutAction<IApplicationRole> = entity => async dispatch => {
+export const updateRole: ICrudPutAction<IApplicationRole> = entity => async dispatch => {
   const result = await dispatch({
     type: ACTION_TYPES.UPDATE_APPLICATIONROLE,
-    payload: axios.put(apiUrl, cleanEntity(entity))
+    payload: axios.put(fetchUrl, cleanEntity(entity))
   });
   return result;
 };
 
 export const deleteEntity: ICrudDeleteAction<IApplicationRole> = id => async dispatch => {
-  const requestUrl = `${apiUrl}/${id}`;
+  const requestUrl = `${fetchUrl}/${id}`;
   const result = await dispatch({
     type: ACTION_TYPES.DELETE_APPLICATIONROLE,
     payload: axios.delete(requestUrl)

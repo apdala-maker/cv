@@ -216,7 +216,8 @@
       }
     },
     "field": {
-      "id": "ID"
+      "id": "ID",
+      "userCode": "User Code"
     },
     "ribbon": {
       "dev": "Development"

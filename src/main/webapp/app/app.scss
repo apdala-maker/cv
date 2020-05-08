@@ -380,5 +380,9 @@ element.style {
   background: #505050 !important;
   z-index: 0 !important;
 }
+.cursor-pointer {
+  cursor: pointer !important;
+  padding: 1px 3px;
+}
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
